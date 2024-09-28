@@ -1,15 +1,7 @@
 ---
-layout: page
+layout: default
 title: About
-permalink: /about/
 ---
+# About page
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+This page tells you a little bit about me.eeee

@@ -17,6 +17,12 @@ html {
   font-size: 100%;
   color: $myGray;
   font: 18px/1.4 $georgia;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 body {
@@ -24,7 +30,7 @@ body {
   background-image: url("/images/bg.png");
   background-repeat: repeat;
   font: 18px/1.4 $georgia;
-  color: $darkGray;
+  color: $myGray;
 }
 
 banner-load {
@@ -40,7 +46,7 @@ banner-load {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $georgia;
-  color: $darkerGray;
+  color: $myGray;
   font-weight: bold;
 
   line-height: 1.7;
@@ -73,7 +79,6 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
 }
 
 p {
@@ -93,7 +98,7 @@ a:visited {
 }
 a:hover {
   text-decoration: none;
-  color:$gray;
+  color:$darkGray;
 }
 a:active {
   text-decoration: none;
@@ -114,7 +119,7 @@ a.title:hover {
 }
 a.title:active {
   text-decoration: none;
-  color:$gray;
+  color:$myGray;
 }
 
 a.reallink:link {
@@ -131,7 +136,24 @@ a.reallink:hover {
 }
 a.reallink:active {
   text-decoration: none;
-  color:$gray;
+  color:$myGray;
+}
+
+a.footerlink:link {
+  text-decoration: none;
+  color:$white;
+}
+a.footerlink:visited {
+  text-decoration: none;
+  color:$white;
+}
+a.footerlink:hover {
+  text-decoration: none;
+  color:$myYellow;
+}
+a.footerlink:active {
+  text-decoration: none;
+  color:$white;
 }
 
 ul, ol {
@@ -177,16 +199,16 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $myGray;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
+  color: $myGray;
   background: $lightGray;
 }
 ::selection {
-  color: $black;
+  color: $myGray;
   background: $lightGray;
 }
 
@@ -253,7 +275,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $myGray;
   cursor: pointer;
   font-family: $georgia;
   font-weight: 300;
@@ -263,7 +285,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $myGray;
   font-size: 16px;
 
   @include mobile {
@@ -286,7 +308,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $myGray;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -315,9 +337,9 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid $darkGray;
     padding: 0.1em 1em;
-    color: $gray;
+    color: $myGray;
     font-size: 22px;
     font-style: italic;
   }
@@ -336,14 +358,14 @@ nav {
   white-space: nowrap;
   padding: 0.2em 0em 0.2em 0em;
   border-radius: 0.25em;
-  color: #FFF;
+  color: $white;
   background-color: $myGray;
   text-align: center;
   font-size: 2vw;
   font-family: $newRocker;
 }
 .title:hover {
-  /*box-shadow: #000 0 0 0 0.1em;*/
+  /*box-shadow: $myGray 0 0 0 0.1em;*/
   color: $myYellow;
 }
 
@@ -351,13 +373,13 @@ nav {
   white-space: nowrap;
   padding: 0.5em 0em 0.5em 0em;
   border-radius: 0.25em;
-  color: #FFF;
+  color: $white;
   background-color: $myGray;
   text-align: center;
   font-size: 100%;
 }
 .passagetitle:hover {
-  /*box-shadow: #000 0 0 0 0.1em;*/
+  /*box-shadow: $myGray 0 0 0 0.1em;*/
   color: $myYellow;
 }
 
@@ -378,8 +400,9 @@ falselink {
   padding: 0.2em 0.3em 0.2em 0.3em;
   border-radius: 0.5em;
   color:$myGray;
-  background-color: #FFF;
+  background-color: $white;
 }
+
 falselink:hover {
   background-color: $myYellow;
 }
@@ -393,6 +416,15 @@ falselink:hover {
   background-color: $myGray;
 }
 
+.footerlink {
+  border: none;
+  white-space: nowrap;
+  border-radius: 0.5em;
+  color: $white;
+  background-color: $myGray;
+  text-align: center;
+}
+
 .wrapper-footer {
   position: fixed;
   left: 0;
@@ -401,26 +433,33 @@ falselink:hover {
   /*margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;*/
-  background-color: $darkerGray;
+  background-color: $myGray;
   color: $white;
 }
 
 footer {
-  padding: 3px 0;
-  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: $white;
+  text-align: left;
 }
 
 .wrapper-header {
   position: fixed;
   left: 0;
   top: 0;
-  background-color: $darkerGray;
+  background-color: $myGray;
   color: $white;
   width: 100%;
 }
 
 header {
-  padding: 3px 0;
+  padding-top: 8px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
   text-align: center;
 }
 

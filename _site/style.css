@@ -63,6 +63,13 @@ html {
   font-size: 100%;
   color: #28272A;
   font: 18px/1.4 Georgia, serif;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 
 body {
@@ -70,7 +77,7 @@ body {
   background-image: url("/images/bg.png");
   background-repeat: repeat;
   font: 18px/1.4 Georgia, serif;
-  color: #333;
+  color: #28272A;
 }
 
 banner-load {
@@ -86,7 +93,7 @@ banner-load {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Georgia, serif;
-  color: #222;
+  color: #28272A;
   font-weight: bold;
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -119,7 +126,6 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: #666;
 }
 
 p {
@@ -141,7 +147,7 @@ a:visited {
 
 a:hover {
   text-decoration: none;
-  color: #666;
+  color: #333;
 }
 
 a:active {
@@ -166,7 +172,7 @@ a.title:hover {
 
 a.title:active {
   text-decoration: none;
-  color: #666;
+  color: #28272A;
 }
 
 a.reallink:link {
@@ -186,7 +192,27 @@ a.reallink:hover {
 
 a.reallink:active {
   text-decoration: none;
-  color: #666;
+  color: #28272A;
+}
+
+a.footerlink:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+a.footerlink:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+a.footerlink:hover {
+  text-decoration: none;
+  color: #FFFF00;
+}
+
+a.footerlink:active {
+  text-decoration: none;
+  color: #fff;
 }
 
 ul, ol {
@@ -231,16 +257,16 @@ img {
 
 .date {
   font-style: italic;
-  color: #666;
+  color: #28272A;
 }
 
 ::-moz-selection {
-  color: #000;
+  color: #28272A;
   background: #eee;
 }
 
 ::selection {
-  color: #000;
+  color: #28272A;
   background: #eee;
 }
 
@@ -302,7 +328,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: #333;
+  color: #28272A;
   cursor: pointer;
   font-family: Georgia, serif;
   font-weight: 300;
@@ -312,7 +338,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: #666;
+  color: #28272A;
   font-size: 16px;
 }
 @media screen and (max-width: 640px) {
@@ -337,7 +363,7 @@ nav {
 }
 nav a {
   margin-left: 20px;
-  color: #333;
+  color: #28272A;
   text-align: right;
   font-weight: 300;
   letter-spacing: 1px;
@@ -361,9 +387,9 @@ nav a {
 
 .post blockquote {
   margin: 1.8em 0.8em;
-  border-left: 2px solid #666;
+  border-left: 2px solid #333;
   padding: 0.1em 1em;
-  color: #666;
+  color: #28272A;
   font-size: 22px;
   font-style: italic;
 }
@@ -379,7 +405,7 @@ nav a {
   white-space: nowrap;
   padding: 0.2em 0em 0.2em 0em;
   border-radius: 0.25em;
-  color: #FFF;
+  color: #fff;
   background-color: #28272A;
   text-align: center;
   font-size: 2vw;
@@ -387,7 +413,7 @@ nav a {
 }
 
 .title:hover {
-  /*box-shadow: #000 0 0 0 0.1em;*/
+  /*box-shadow: $myGray 0 0 0 0.1em;*/
   color: #FFFF00;
 }
 
@@ -395,14 +421,14 @@ nav a {
   white-space: nowrap;
   padding: 0.5em 0em 0.5em 0em;
   border-radius: 0.25em;
-  color: #FFF;
+  color: #fff;
   background-color: #28272A;
   text-align: center;
   font-size: 100%;
 }
 
 .passagetitle:hover {
-  /*box-shadow: #000 0 0 0 0.1em;*/
+  /*box-shadow: $myGray 0 0 0 0.1em;*/
   color: #FFFF00;
 }
 
@@ -423,7 +449,7 @@ falselink {
   padding: 0.2em 0.3em 0.2em 0.3em;
   border-radius: 0.5em;
   color: #28272A;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 falselink:hover {
@@ -439,6 +465,15 @@ falselink:hover {
   background-color: #28272A;
 }
 
+.footerlink {
+  border: none;
+  white-space: nowrap;
+  border-radius: 0.5em;
+  color: #fff;
+  background-color: #28272A;
+  text-align: center;
+}
+
 .wrapper-footer {
   position: fixed;
   left: 0;
@@ -447,26 +482,33 @@ falselink:hover {
   /*margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;*/
-  background-color: #222;
+  background-color: #28272A;
   color: #fff;
 }
 
 footer {
-  padding: 3px 0;
-  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: #fff;
+  text-align: left;
 }
 
 .wrapper-header {
   position: fixed;
   left: 0;
   top: 0;
-  background-color: #222;
+  background-color: #28272A;
   color: #fff;
   width: 100%;
 }
 
 header {
-  padding: 3px 0;
+  padding-top: 8px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
   text-align: center;
 }
 
