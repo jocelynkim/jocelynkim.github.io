@@ -16,7 +16,7 @@
 html {
   font-size: 100%;
   color: $myGray;
-  font: 18px/1.4 $georgia;
+  font: 18px/1.4 $nunito;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -29,7 +29,7 @@ body {
   background: $white;
   background-image: url("/images/bg.png");
   background-repeat: repeat;
-  font: 18px/1.4 $georgia;
+  font: 18px/1.4 $nunito;
   color: $myGray;
   display: flex;
   margin-top:40px;
@@ -45,7 +45,6 @@ banner-load {
   margin: auto;
   padding: 0 10px;
   width: 100%;
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 0.2em 0 15px;
   padding: 0;
 
   @include mobile {
@@ -394,6 +393,7 @@ nav {
   margin:0;
   padding:1.5em;
   margin-bottom: 10px;
+  margin-right: 10px;
   background-color: white;
   border: solid $myGray 0.05em;
   box-shadow: $myGray 0.5em 0.5em 0;
@@ -401,13 +401,16 @@ nav {
 }
 
 falselink {
+  font-family: $georgia;
   border: dashed $myGray 0.05em;
   white-space: wrap;
-  padding: 0.2em 0.3em 0.2em 0.3em;
+  padding: 0.3em 0.3em 0.2em 0.3em;
   border-radius: 0.5em;
   color:$myGray;
   background-color: $white;
   font-weight: normal;
+  vertical-align: middle !important;
+  line-height:2em;
 }
 
 falselink:hover {
@@ -415,6 +418,7 @@ falselink:hover {
 }
 
 reallink {
+  font-family: $georgia;
   border: none;
   white-space: nowrap;
   padding: 0.3em 0.3em 0.2em 0.3em;
@@ -422,6 +426,7 @@ reallink {
   color: $white;
   background-color: $myGray;
   vertical-align: middle !important;
+  line-height:2em;
 }
 
 reallink:link {
@@ -526,6 +531,15 @@ header {
   }
 }
 
+.imgContainer{
+  margin: 0 20px 0px 0px;
+  text-align:center;
+  grid-column-gap:10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
 .fade-in{
   -webkit-animation: fade-in .3s ease;
   -moz-animation: fade-in ease-in-out .3s both;
@@ -538,9 +552,9 @@ header {
   border-width: 1px;
   border-style: solid;
   box-shadow: $myGray 0.25em 0.25em 0;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  object-fit:scale-down;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .icon {

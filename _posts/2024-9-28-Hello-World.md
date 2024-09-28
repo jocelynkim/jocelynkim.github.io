@@ -2,10 +2,21 @@
 layout: post
 title: hello world!
 ---
-After 9 months I finally added blog posts to my site!
+I finally added a blog to my site!!!
 
-I also cleaned up the site in general and added proper pages and navigation. It's probably a  
+To go back a little further in time: in 2022, my site used to just be a simple Twine file that acted as a landing page that linked to my social media sites. 
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+<div class="imgContainer">
+	<img class="fade-in" width="35%" src="../images/blog/oldsite1.png">
+	<img class="fade-in" width="40%" src="../images/blog/oldsite2.png">
+</div>
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+<i><center>Some screenshots of my old site. If you clicked on the "SECRET" button then it would display a random image that I liked.</center></i>
+
+It served me just fine for a handful of years, but eventually I got the brainworms to tear down my site and build it back up from the ground-up. At the start of this year I refreshed my site! Luckily it was fairly easy to do so with <a href="https://www.jekyllnow.com/">Jekyll Now</a>.
+
+This time (9 months later), I wanted to add the framework to support blogposts. I also had to set up my PC to be able to work on my website. Even with tutorials, I spent hours trying to set up my environments and get Ruby and Jekyll and everything working... I feel like there were a million steps where I ran into errors, but now everything is working! I even set up my Sublime Text with LiveReload/Browser Sync so that I can test my changes locally simply by saving and waiting for my browser to refresh. It's certainly faster to iterate than waiting for Unity to finish compiling a whole project. I had a lot of fun casually dabbling in web dev despite all of the headaches along the way. You web developers out there are so strong...
+
+Even after spending so much time setting up this blog, I don't think I'll write blog posts very often. I'm pretty bad at putting my thoughts into words in general. Also, I'm lazy. But it would be nice to archive some musings on my site, as few and precious as they are. I feel like if I post them on social media like X or Instagram they'll get washed away and I'll forget all of my ideas!
+
+I still have a few things I'd like to do, but for now I'll stop tinkering and make some dinner.

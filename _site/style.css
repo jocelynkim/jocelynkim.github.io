@@ -62,7 +62,7 @@ table {
 html {
   font-size: 100%;
   color: #28272A;
-  font: 18px/1.4 Georgia, serif;
+  font: 18px/1.4 Nunito Sans, sans-serif;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -76,7 +76,7 @@ body {
   background: #fff;
   background-image: url("/images/bg.png");
   background-repeat: repeat;
-  font: 18px/1.4 Georgia, serif;
+  font: 18px/1.4 Nunito Sans, sans-serif;
   color: #28272A;
   display: flex;
   margin-top: 40px;
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #28272A;
   font-weight: bold;
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 0.2em 0 15px;
   padding: 0;
 }
 @media screen and (max-width: 640px) {
@@ -438,6 +438,7 @@ nav a {
   margin: 0;
   padding: 1.5em;
   margin-bottom: 10px;
+  margin-right: 10px;
   background-color: white;
   border: solid #28272A 0.05em;
   box-shadow: #28272A 0.5em 0.5em 0;
@@ -445,13 +446,16 @@ nav a {
 }
 
 falselink {
+  font-family: Georgia, serif;
   border: dashed #28272A 0.05em;
   white-space: wrap;
-  padding: 0.2em 0.3em 0.2em 0.3em;
+  padding: 0.3em 0.3em 0.2em 0.3em;
   border-radius: 0.5em;
   color: #28272A;
   background-color: #fff;
   font-weight: normal;
+  vertical-align: middle !important;
+  line-height: 2em;
 }
 
 falselink:hover {
@@ -459,6 +463,7 @@ falselink:hover {
 }
 
 reallink {
+  font-family: Georgia, serif;
   border: none;
   white-space: nowrap;
   padding: 0.3em 0.3em 0.2em 0.3em;
@@ -466,6 +471,7 @@ reallink {
   color: #fff;
   background-color: #28272A;
   vertical-align: middle !important;
+  line-height: 2em;
 }
 
 reallink:link {
@@ -608,6 +614,15 @@ header {
     font-size: 4vw;
   }
 }
+.imgContainer {
+  margin: 0 20px 0px 0px;
+  text-align: center;
+  grid-column-gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .fade-in {
   -webkit-animation: fade-in 0.3s ease;
   -moz-animation: fade-in ease-in-out 0.3s both;
@@ -620,9 +635,9 @@ header {
   border-width: 1px;
   border-style: solid;
   box-shadow: #28272A 0.25em 0.25em 0;
+  object-fit: scale-down;
   margin-left: auto;
   margin-right: auto;
-  display: block;
 }
 
 .icon {

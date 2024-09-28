@@ -1,7 +1,6 @@
 ---
-foo: whateverrr
 layout: default
-title: shinji zone – welcome to my zone
+title: shinji zone
 ---
 
 <!DOCTYPE html>
@@ -18,23 +17,28 @@ title: shinji zone – welcome to my zone
             Shinji is a <falselink class="falselink">game developer</falselink> and <falselink class="falselink">illustrator</falselink> based in Tokyo.<br>They enjoy drinking chamomile tea, and generally dislike loud noises.<br><br>
             <jp>しんじと申します。実は韓国名です。東京住んでいるイラストと色々をやっているゲーム開発者です。カモミールティーが好きで、大きな音が大体嫌いです。</jp>
             <br><br>
-            <a href="/about"><reallink>About</reallink></a>
+            <a href="/about"><reallink><img class="icon" src="../images/about.svg" alt="About"> About</reallink></a>
           </div> 
         </div>
       </div>
       <div class="passage-6">
         <div class="passage">
-          <div class="title"><a class="title" href="/">✦　welcome to my zone　✦</a></div><br>
+          <div class="title"><a class="title" href="/">✦　{{ page.title }}　✦</a></div><br>
           <div id="main" role="main" class="container" style="text-align:left">
-            <img class="fade-in" width="50%" src="images/toroneko.png"><br>
-            This is my diary. I write about game dev, language learning, and whatever else I feel like rambling about.<br>
-            <jp>しんじの活動日記です。ゲーム開発、言語学習などに関する話しを書いています。主に英語で書いてありますが時々頑張って日本語でも書きます。</jp>
+            <div class="imgContainer">
+              <img class="fade-in" width="50%" src="images/toroneko.png">
+            </div><br>
+            Here is my diary. I write about game dev, language learning, and whatever else I feel like rambling about.<br>
+            <jp>しんじの活動日記です。ゲーム開発、言語学習などに関するものなど。主に英語で書いてあります。</jp>
+
+            <br><br>
             <h3>Latest Posts</h3>
             {% for post in site.posts limit:3 %}
-            <falselink>{{ post.date | date: '%d/%m/%y' }}</falselink> <a href="{{ post.url }}"><reallink>{{ post.title }}</reallink></a>
+            ✦ <falselink>{{ post.date | date: '%Y/%m/%d' }}</falselink> - <a href="{{ post.url }}"><reallink>{{ post.title }}</reallink></a>
+            <br>
             {% endfor %}
             <br><br>
-            <a href="/blog"><reallink>View Blog</reallink></a>
+            <a href="/blog"><reallink><img class="icon" src="../images/blog.svg" alt="Blog"> View all posts</reallink></a>
           </div>
         </div>
       </div>
@@ -42,11 +46,12 @@ title: shinji zone – welcome to my zone
         <div class="passage">
           <div class="title"><a class="title" href="/">✦　log　✦</a></div><br>
           <div id="main" role="main" class="container">
-            <falselink>Changelog</falselink>
-            <br>
-            - 09/2024 - Added blog.<br>
-            - 01/2024 - Updated site.<br>
-            - 12/2020 - Created site.
+            Tracking the updates made to Shinji Zone.
+            <br><br>
+            <h3>Changelog</h3>
+            ✦ <falselink>2024/09</falselink> - Added a blog section.<br>
+            ✦ <falselink>2024/01</falselink> - Refreshed site.<br>
+            ✦ <falselink>2022/07</falselink> - Created site.
           </div>
         </div>
       </div>
