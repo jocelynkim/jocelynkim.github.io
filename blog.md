@@ -1,14 +1,10 @@
 ---
 layout: blog
-title: shinji zone - blog
+title: shinji blog
 ---
-<h1>Latest Posts</h1>
-
+<h2>Posts</h2>
 <ul>
   {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-    </li>
+    <falselink>{{ post.date | date: '%d/%m/%y' }}</falselink> <a href="{{ post.url }}"><reallink>{{ post.title }}</reallink></a> {{ post.excerpt }}<br>
   {% endfor %}
 </ul>

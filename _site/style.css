@@ -78,6 +78,10 @@ body {
   background-repeat: repeat;
   font: 18px/1.4 Georgia, serif;
   color: #28272A;
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  justify-content: center;
 }
 
 banner-load {
@@ -86,7 +90,6 @@ banner-load {
 
 .container {
   margin: auto;
-  max-width: 740px;
   padding: 0 10px;
   width: 100%;
 }
@@ -138,6 +141,7 @@ p {
 a:link {
   text-decoration: none;
   color: #28272A;
+  font-weight: bold;
 }
 
 a:visited {
@@ -147,7 +151,7 @@ a:visited {
 
 a:hover {
   text-decoration: none;
-  color: #333;
+  color: #4183C4;
 }
 
 a:active {
@@ -158,6 +162,7 @@ a:active {
 a.title:link {
   text-decoration: none;
   color: #fff;
+  font-weight: normal;
 }
 
 a.title:visited {
@@ -178,6 +183,7 @@ a.title:active {
 a.reallink:link {
   text-decoration: none;
   color: #fff;
+  font-weight: normal !important;
 }
 
 a.reallink:visited {
@@ -188,11 +194,13 @@ a.reallink:visited {
 a.reallink:hover {
   text-decoration: none;
   color: #FFFF00;
+  font-weight: normal !important;
 }
 
 a.reallink:active {
   text-decoration: none;
   color: #28272A;
+  font-weight: normal !important;
 }
 
 a.footerlink:link {
@@ -242,13 +250,6 @@ em, i {
 
 strong, b {
   font-weight: bold;
-}
-
-img {
-  max-width: 100%;
-  border-width: 1px;
-  border-style: solid;
-  box-shadow: #28272A 0.25em 0.25em 0;
 }
 
 .gmnoprint img {
@@ -450,19 +451,38 @@ falselink {
   border-radius: 0.5em;
   color: #28272A;
   background-color: #fff;
+  font-weight: normal;
 }
 
 falselink:hover {
   background-color: #FFFF00;
 }
 
-.reallink {
+reallink {
   border: none;
   white-space: nowrap;
-  padding: 0.2em 0.3em 0.2em 0.3em;
+  padding: 0.3em 0.3em 0.2em 0.3em;
   border-radius: 0.5em;
   color: #fff;
   background-color: #28272A;
+  vertical-align: middle !important;
+}
+
+reallink:link {
+  color: #fff;
+  font-weight: normal !important;
+}
+
+reallink:hover {
+  color: #FFFF00;
+}
+
+reallink:visited {
+  color: #fff;
+}
+
+reallink:active {
+  color: #fff;
 }
 
 .footerlink {
@@ -492,7 +512,14 @@ footer {
   padding-left: 16px;
   padding-right: 16px;
   color: #fff;
-  text-align: left;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
 
 .wrapper-header {
@@ -589,6 +616,27 @@ header {
   animation: fade-in 0.3s ease;
   visibility: visible;
   -webkit-backface-visibility: hidden;
+  max-width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: #28272A 0.25em 0.25em 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.icon {
+  display: inline-block;
+  width: 1.25em;
+  height: 1em;
+  padding-top: 0.05em;
+  stroke-width: 0;
+  stroke: #FFFF00;
+  color: #FFFF00 !important;
+  fill: #FFFF00;
+  max-width: 100%;
+  border-width: 0px;
+  border-style: none;
 }
 
 @-webkit-keyframes fade-in {

@@ -16,55 +16,37 @@
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
   <body>
-    <div class="wrapper-masthead">  
-    </div>
-
-    <!--<div class="row">
-      <div class="passage-3">
+      <div class="passage-9">
         <div class="passage">
-          <div class="title"><a class="title" href="/">✦　info　✦</a></div><br>
-          <div id="main" role="main" class="container">
-            <falselink class="falselink">Shinji</falselink> is a <falselink class="falselink">game developer</falselink> and <falselink class="falselink">illustrator</falselink> based in Tokyo.<br>They enjoy drinking chamomile tea, and generally dislike loud noises.<br><br>
-            <jp>イラストと色々をやっているゲーム開発者です。</jp>
-          </div> 
-        </div>
-      </div>-->
-
-      <div class="passage-12">
-        <div class="passage">
-          <div class="title"><a class="title" href="/">✦　blog zone　✦</a></div><br>
-          <div id="main" role="main" class="container" style="text-align:center">
+          <div class="title"><a class="title" href="/">✦　{{ page.title }}　✦</a></div><br>
+          <div id="main" role="main" class="container" style="text-align:left">
             {{ content }}
+            <a href="/"><reallink>Back</reallink></a>
           </div>
         </div>
       </div>
-
-      <!--
-      <div class="passage-3">
-        <div class="passage">
-          <div class="title"><a class="title" href="/">✦　links　✦</a></div><br>
-          <div id="main" role="main" class="container">
-            <a class="reallink" href="https://www.twitter.com/shinji_zone">Twitter</a> <falselink class="falselink">@shinji_zone</falselink><br>
-            <a class="reallink" href="https://www.instagram.com/shinji.dev/">Instagram</a> <falselink class="falselink">@shinji.dev</falselink><br><br>
-            <a class="reallink" href="mailto:me@shinji.zone">E-mail</a> <falselink class="falselink">me ★ shinji.zone (★→@)</falselink><br>
-          </div>
-        </div>
-      </div>
-    </div>-->
-
     <div class="wrapper-masthead">
     </div>
+
     <div class="wrapper-footer">
       <div class="wrapper-container">
         <footer class="footer">
-          <a href="https://github.com/jocelynkim"><i class="svg-icon github"></i></a>
-          <a href="https://instagram.com/shinji.dev"><i class="svg-icon instagram"></i></a>
-          <a href="https://www.linkedin.com/in/jocelyn-kim"><i class="svg-icon linkedin"></i></a>
-          <a href="https://www.twitter.com/shinji_zone"><i class="svg-icon twitter"></i></a>
-          {% include navigation.html %}
+          <span class="left">
+            <a href="/"><img class="icon" src="../images/home.svg" alt="Home"></i></a>
+            <a href="/about"><img class="icon" src="../images/about.svg" alt="About"></i></a>
+            <a href="/blog"><img class="icon" src="../images/blog.svg" alt="Blog"></i></a>
+          </span>
+          <span class="right">
+            <a href="mailto:me@shinji.zone"><img class="icon" src="../images/email.svg" alt="E-mail"></i></a>
+            <a href="https://www.twitter.com/shinji_zone"><img class="icon" src="../images/x.svg" alt="X"></i></a>
+            <a href="https://instagram.com/shinji.dev"><img class="icon" src="../images/instagram.svg" alt="Instagram"></i></a>
+            <a href="https://www.linkedin.com/in/jocelyn-kim"><img class="icon" src="../images/linkedin.svg" alt="LinkedIn"></i></a>
+            <a href="https://github.com/jocelynkim"><img class="icon" src="../images/github.svg" alt="GitHub"></i></a>
+          </span>
         </footer>
       </div>
     </div>
+    
     <script>
       $('.btn').click(function() {
           location.reload();

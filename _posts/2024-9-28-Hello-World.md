@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Hello world, again.
+title: hello world!
 ---
+After 9 months I finally added blog posts to my site!
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+I also cleaned up the site in general and added proper pages and navigation. It's probably a  
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 

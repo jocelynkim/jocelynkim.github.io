@@ -31,6 +31,10 @@ body {
   background-repeat: repeat;
   font: 18px/1.4 $georgia;
   color: $myGray;
+  display: flex;
+  margin-top:40px;
+  margin-bottom:25px;
+  justify-content: center;
 }
 
 banner-load {
@@ -39,9 +43,9 @@ banner-load {
 
 .container {
   margin: auto;
-  max-width: 740px;
   padding: 0 10px;
   width: 100%;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -91,6 +95,7 @@ p {
 a:link {
   text-decoration: none;
   color:$myGray;
+  font-weight: bold;
 }
 a:visited {
   text-decoration: none;
@@ -98,7 +103,7 @@ a:visited {
 }
 a:hover {
   text-decoration: none;
-  color:$darkGray;
+  color:$blue;
 }
 a:active {
   text-decoration: none;
@@ -108,6 +113,7 @@ a:active {
 a.title:link {
   text-decoration: none;
   color:$white;
+  font-weight: normal;
 }
 a.title:visited {
   text-decoration: none;
@@ -125,6 +131,7 @@ a.title:active {
 a.reallink:link {
   text-decoration: none;
   color:$white;
+  font-weight: normal !important;
 }
 a.reallink:visited {
   text-decoration: none;
@@ -133,10 +140,12 @@ a.reallink:visited {
 a.reallink:hover {
   text-decoration: none;
   color:$myYellow;
+  font-weight: normal !important;
 }
 a.reallink:active {
   text-decoration: none;
   color:$myGray;
+  font-weight: normal !important;
 }
 
 a.footerlink:link {
@@ -186,10 +195,7 @@ strong, b {
 }
 
 img {
-  max-width: 100%;
-  border-width: 1px;
-  border-style: solid;
-  box-shadow: $myGray 0.25em 0.25em 0;
+
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -401,19 +407,38 @@ falselink {
   border-radius: 0.5em;
   color:$myGray;
   background-color: $white;
+  font-weight: normal;
 }
 
 falselink:hover {
   background-color: $myYellow;
 }
 
-.reallink {
+reallink {
   border: none;
   white-space: nowrap;
-  padding: 0.2em 0.3em 0.2em 0.3em;
+  padding: 0.3em 0.3em 0.2em 0.3em;
   border-radius: 0.5em;
   color: $white;
   background-color: $myGray;
+  vertical-align: middle !important;
+}
+
+reallink:link {
+  color: $white;
+  font-weight: normal !important;
+}
+
+reallink:hover {
+  color: $myYellow;
+}
+
+reallink:visited {
+  color: $white;
+}
+
+reallink:active {
+  color: $white;
 }
 
 .footerlink {
@@ -443,8 +468,10 @@ footer {
   padding-left: 16px;
   padding-right: 16px;
   color: $white;
-  text-align: left;
 }
+
+.left {float:left;}
+.right {float:right;}
 
 .wrapper-header {
   position: fixed;
@@ -466,7 +493,8 @@ header {
 .row::after {
   content: "";
   clear: both;
-  display: table;
+  display: table; 
+
 }
 
 /* For desktop: */
@@ -506,7 +534,29 @@ header {
   animation: fade-in .3s ease;
   visibility: visible;
   -webkit-backface-visibility: hidden;
+  max-width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: $myGray 0.25em 0.25em 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
+
+.icon {
+  display: inline-block;
+  width: 1.25em;
+  height: 1em;
+  padding-top: 0.05em;
+  stroke-width: 0;
+  stroke: $myYellow;
+  color: $myYellow !important;
+  fill: $myYellow;
+  max-width: 100%;
+  border-width: 0px;
+  border-style: none;
+}
+
 @-webkit-keyframes fade-in{0%{opacity:0;} 100%{opacity:1;}}
 @-moz-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
 @-o-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
