@@ -13,5 +13,5 @@ They enjoy drinking chamomile tea, and generally dislike loud noises.
 <br>
 <h2>Links</h2>
 <a href="mailto:me@shinji.zone"><reallink><img class="icon" src="../images/email.svg" alt="E-mail"> E-mail</reallink></a> <falselink class="falselink">me ★ shinji.zone (★→@)</falselink><br>
-<a href="https://bsky.app/profile/shinji.zone"><reallink><img class="icon" src="../images/bsky.svg" alt="X"> Bluesky</reallink></a> <falselink class="falselink">shinji.zone</falselink><br>
+<a href="https://bsky.app/profile/shinji.zone"><reallink><img class="icon" src="../images/bsky.svg" alt="Bluesky"> Bluesky</reallink></a> <falselink class="falselink">shinji.zone</falselink><br>
 <a href="https://www.instagram.com/shinji.dev/"><reallink><img class="icon" src="../images/instagram.svg" alt="Instagram"> Instagram</reallink></a> <falselink class="falselink">shinji.dev</falselink><br>
