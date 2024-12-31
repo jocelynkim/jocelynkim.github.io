@@ -229,6 +229,13 @@ img {
     clear: both;
 }
 
+hr {
+  border-top: 1px dashed #28272A;
+  width: 100%;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
@@ -400,6 +407,16 @@ nav {
   line-height: 1.7;
 }
 
+.caption {
+  font-style:italic;
+  color:$myGray;
+  font-weight:normal;
+  font-size:85%;
+  width:100%;
+  text-align: center;
+  padding:1.0em;
+}
+
 falselink {
   font-family: $georgia;
   border: dashed $myGray 0.05em;
@@ -538,6 +555,33 @@ header {
   display:flex;
   justify-content:center;
   align-items:center;
+  padding: 2.0em 2.0em 0;
+}
+
+iframe {
+  aspect-ratio:16/9;
+  width:100% !important;
+}
+
+details {
+  border: 1px dashed $myGray;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px dashed $myGray;
+  margin-bottom: 0.5em;
 }
 
 .fade-in{

@@ -281,6 +281,13 @@ strong, b {
   clear: both;
 }
 
+hr {
+  border-top: 1px dashed #28272A;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
@@ -443,6 +450,16 @@ nav a {
   border: solid #28272A 0.05em;
   box-shadow: #28272A 0.5em 0.5em 0;
   line-height: 1.7;
+}
+
+.caption {
+  font-style: italic;
+  color: #28272A;
+  font-weight: normal;
+  font-size: 85%;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
 }
 
 falselink {
@@ -621,6 +638,33 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2em 2em 0;
+}
+
+iframe {
+  aspect-ratio: 16/9;
+  width: 100% !important;
+}
+
+details {
+  border: 1px dashed #28272A;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px dashed #28272A;
+  margin-bottom: 0.5em;
 }
 
 .fade-in {
