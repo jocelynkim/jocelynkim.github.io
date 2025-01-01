@@ -11,7 +11,7 @@ To go back a little further in time: in 2022, my site used to just be a simple T
 	<img class="fade-in" width="40%" src="../images/blog/oldsite2.png">
 </div>
 
-<i><center>Some screenshots of my old site. If you clicked on the "SECRET" button then it would display a random image that I liked.</center></i>
+<div class="caption">Some screenshots of my old site. If you clicked on the "SECRET" button then it would display a random image that I liked.</div>
 
 It served me just fine for a handful of years, but eventually I got the brainworms to tear down my site and build it back up from the ground-up. At the start of this year I refreshed my site! Luckily it was fairly easy to do so with <a href="https://www.jekyllnow.com/">Jekyll Now</a>.
 
