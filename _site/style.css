@@ -641,6 +641,41 @@ header {
   padding: 2em 2em 0;
 }
 
+.fade-in {
+  -webkit-animation: fade-in 0.3s ease;
+  -moz-animation: fade-in ease-in-out 0.3s both;
+  -ms-animation: fade-in ease-in-out 0.3s both;
+  -o-animation: fade-in ease-in-out 0.3s both;
+  animation: fade-in 0.3s ease;
+  visibility: visible;
+  -webkit-backface-visibility: hidden;
+  max-width: 100%;
+  border-radius: 0px;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: #28272A 0.25em 0.25em 0;
+  object-fit: scale-down;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.portrait {
+  height: 100%;
+  width: auto;
+  padding: 0em 1em 0;
+}
+
+.landscape {
+  width: 100%;
+  height: auto;
+  padding: 0em 1em 0;
+}
+
 iframe {
   aspect-ratio: 16/9;
   width: 100% !important;
@@ -665,23 +700,6 @@ details[open] {
 details[open] summary {
   border-bottom: 1px dashed #28272A;
   margin-bottom: 0.5em;
-}
-
-.fade-in {
-  -webkit-animation: fade-in 0.3s ease;
-  -moz-animation: fade-in ease-in-out 0.3s both;
-  -ms-animation: fade-in ease-in-out 0.3s both;
-  -o-animation: fade-in ease-in-out 0.3s both;
-  animation: fade-in 0.3s ease;
-  visibility: visible;
-  -webkit-backface-visibility: hidden;
-  max-width: 100%;
-  border-width: 1px;
-  border-style: solid;
-  box-shadow: #28272A 0.25em 0.25em 0;
-  object-fit: scale-down;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .icon {

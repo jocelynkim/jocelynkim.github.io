@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="description" content="missing">
+    <meta name="author" content="shinji zone" />
+    <link rel="stylesheet" type="text/css" href="/missing.css" />
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <title>missing 2</title>
+  </head>
+  <body>
+    <a href="../" return>shinji.zone</a><br>
+    <div class="mparent">
+  <img class='mchild moverlay' src="/images/missing/birds_e0.png">
+  <img class='mchild boverlay' src="/images/missing/figure_1.png">
+  <div class="overlaytext">
+    <p>
+      <four>text text text text text text text text text text text text text text text text. text text text text text text text text</four><br/>
+      <a href="/missing-3">link</a>
+    </p>
+  </div>
+</div>
+    <input type="range" orient="vertical" id="slider" min="0" max="255" value="0" step="42.5" list="markers">
+    <option id="markers">
+      <option value="255"></option>
+      <option value="212.5"></option>
+      <option value="170"></option>
+      <option value="127.5"></option>
+      <option value="85"></option>
+      <option value="42.5"></option>
+      <option value="0"></option>
+    </option>
+    <script>
+      function colorslide(){
+        const slider = document.getElementById('slider');
+        let ratio = slider.value / 255;
+        let r = 0;
+        let g = 0;
+        let b = 0;
+        let col = [
+          [0, 0, 0],
+          [125,125,125],
+          [255,255,255]
+        ]
+        if (ratio < 0.5) {
+          ratio = ratio * 2;
+          r = Math.floor(col[0][0] * (1 - ratio) + col[1][0] * ratio);
+          g = Math.floor(col[0][1] * (1 - ratio) + col[1][1] * ratio);
+          b = Math.floor(col[0][2] * (1 - ratio) + col[1][2] * ratio);          
+        } else {
+          ratio = (ratio - 0.5) * 2;
+          r = Math.floor(col[1][0] * (1 - ratio) + col[2][0] * ratio);
+          g = Math.floor(col[1][1] * (1 - ratio) + col[2][1] * ratio);
+          b = Math.floor(col[1][2] * (1 - ratio) + col[2][2] * ratio);
+        }
+        
+        document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;        
+      }
+     
+      window.onload = () => {
+          document.getElementById('slider').value = 255;
+          // Read slider value from URL on page load
+          const params = new URLSearchParams(window.location.search);
+          const val = params.get('slider');
+          if (val !== null) {
+            slider.value = val;
+          }
+          // Update all links to include slider value
+          function updateAllLinks() {
+            const links = document.querySelectorAll('a[href]:not([return])');
+            const sliderVal = slider.value;
+
+            links.forEach(link => {
+              const url = new URL(link.href, window.location.origin);
+              url.searchParams.set('slider', sliderVal);
+              link.href = url.toString();
+            });
+            colorslide();
+          }
+
+          slider.addEventListener('input', updateAllLinks);
+          updateAllLinks();
+        colorslide();
+      }
+      $('.btn').click(function() {
+          location.reload();
+      });
+    </script>
+  </body>
+</html>

@@ -193,10 +193,6 @@ strong, b {
   font-weight: bold;
 }
 
-img {
-
-}
-
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
@@ -554,8 +550,44 @@ header {
   grid-column-gap:10px;
   display:flex;
   justify-content:center;
-  align-items:center;
+  align-items: center;
   padding: 2.0em 2.0em 0;
+}
+
+
+.fade-in{
+  -webkit-animation: fade-in .3s ease;
+  -moz-animation: fade-in ease-in-out .3s both;
+  -ms-animation: fade-in ease-in-out .3s both;
+  -o-animation: fade-in ease-in-out .3s both;
+  animation: fade-in .3s ease;
+  visibility: visible;
+  -webkit-backface-visibility: hidden;
+  max-width: 100%;
+  border-radius: 0px;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: $myGray 0.25em 0.25em 0;
+  object-fit:scale-down;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.portrait {
+    height:100%;
+    width:auto;
+    padding: 0em 1.0em 0;
+}
+
+.landscape {
+    width:100%;
+    height:auto;
+    padding: 0em 1.0em 0;
 }
 
 iframe {
@@ -582,23 +614,6 @@ details[open] {
 details[open] summary {
   border-bottom: 1px dashed $myGray;
   margin-bottom: 0.5em;
-}
-
-.fade-in{
-  -webkit-animation: fade-in .3s ease;
-  -moz-animation: fade-in ease-in-out .3s both;
-  -ms-animation: fade-in ease-in-out .3s both;
-  -o-animation: fade-in ease-in-out .3s both;
-  animation: fade-in .3s ease;
-  visibility: visible;
-  -webkit-backface-visibility: hidden;
-  max-width: 100%;
-  border-width: 1px;
-  border-style: solid;
-  box-shadow: $myGray 0.25em 0.25em 0;
-  object-fit:scale-down;
-  margin-left:auto;
-  margin-right:auto;
 }
 
 .icon {
