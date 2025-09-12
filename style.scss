@@ -19,6 +19,7 @@ html {
   font: 18px/1.4 $nunito;
   overflow: scroll;
   overflow-x: hidden;
+  height: 100%;
 }
 ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
@@ -33,7 +34,7 @@ body {
   color: $myGray;
   display: flex;
   margin-top:40px;
-  margin-bottom:25px;
+  height: 100%;
   justify-content: center;
 }
 
@@ -506,7 +507,7 @@ reallink:active {
 
 footer {
   padding-top: 8px;
-  padding-bottom: 0px;
+  padding-bottom: 35px;
   padding-left: 16px;
   padding-right: 16px;
   color: $white;
