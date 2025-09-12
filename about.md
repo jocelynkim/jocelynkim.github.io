@@ -2,16 +2,19 @@
 layout: blog
 title: about shinji
 ---
-<div class="imgContainer">
-	<img class="fade-in" width="50%" src="../images/toroneko.png">
+<div class="imgContainer fade-in">
+	<img class="photo" width="50%" src="../images/toroneko.png">
 </div>
 <br>
-Shinji is a <falselink>game developer</falselink> and <falselink>illustrator</falselink> based in Tokyo, from California.<br>
+Shinji is a game developer and illustrator based in Tokyo. They are Korean-American, born and raised in sunny California. Feel free to reach out in either English or Japanese!<br>
+Currently, Shinji is working as a technical artist on mobile games. They also dabble in various creative hobbies like drawing and photography.<br>
 They enjoy drinking chamomile tea, and generally dislike loud noises. 
 <jp>
-  <p>しんじです。実は韓国名です。アメリカ出身、東京住みです。</p>
-  <p>ゲーム開発、イラスト、写真、色々やっています。</p>
-  <p>カモミールティーが好きで、うるさい音があんまり好きではないです。</p>
+  <p>信志（しんじ）です。実は韓国名です。東京住みです。
+    韓国系アメリカ人で、カリフォルニアの陽光で育ちました。英語でも日本語でも気軽に話しかけても大丈夫です!<br>
+    現在、モバイルゲームのテクニカルアーティストとして働いています。個人で絵を描いたり、写真を撮ったり、クリエイティブなのを色々やっています。<br>
+    カモミールティーが好きで、うるさい音があんまり気に入らないです。
+  </p>
 </jp> 
 <br>
 <h2>Links</h2>

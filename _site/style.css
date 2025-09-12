@@ -463,16 +463,18 @@ nav a {
 }
 
 falselink {
+  display: inline-block;
   font-family: Georgia, serif;
   border: dashed #28272A 0.05em;
   white-space: wrap;
-  padding: 0.3em 0.3em 0.2em 0.3em;
+  padding: 0.2em 0.4em;
   border-radius: 0.5em;
   color: #28272A;
   background-color: #fff;
   font-weight: normal;
   vertical-align: middle !important;
-  line-height: 2em;
+  line-height: 1.2;
+  margin-bottom: 0.2em;
 }
 
 falselink:hover {
@@ -506,6 +508,19 @@ reallink:visited {
 
 reallink:active {
   color: #fff;
+}
+
+.scrollbox {
+  height: 300px;
+  line-height: 2em;
+  overflow: scroll;
+  padding: 0.3em 0.3em 0.2em 0.3em;
+  background-color: #fff;
+  border: 0.05em dashed #28272A;
+  border-radius: 0.5em;
+  white-space: normal;
+  vertical-align: top;
+  overflow: auto;
 }
 
 .footerlink {
@@ -622,23 +637,23 @@ header {
   padding: 15px;
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile */
-  [class*=passage-] {
-    width: 100%;
-  }
-  .title {
-    font-size: 4vw;
-  }
-}
 .imgContainer {
-  margin: 0 20px 0px 0px;
-  text-align: center;
-  grid-column-gap: 10px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 2em;
   padding: 2em 2em 0;
+}
+
+.photo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #28272A;
+  box-shadow: 0.25em 0.25em 0 #28272A;
+  object-fit: scale-down;
+  flex: 0 0 auto;
 }
 
 .fade-in {
@@ -649,31 +664,6 @@ header {
   animation: fade-in 0.3s ease;
   visibility: visible;
   -webkit-backface-visibility: hidden;
-  max-width: 100%;
-  border-radius: 0px;
-  border-width: 1px;
-  border-style: solid;
-  box-shadow: #28272A 0.25em 0.25em 0;
-  object-fit: scale-down;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.portrait {
-  height: 100%;
-  width: auto;
-  padding: 0em 1em 0;
-}
-
-.landscape {
-  width: 100%;
-  height: auto;
-  padding: 0em 1em 0;
 }
 
 iframe {
@@ -716,6 +706,21 @@ details[open] summary {
   border-style: none;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile */
+  [class*=passage-] {
+    width: 100%;
+  }
+  .title {
+    font-size: 4vw;
+  }
+  .imgContainer {
+    gap: 1em;
+  }
+  .photo {
+    flex: 1 1 100%;
+  }
+}
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
