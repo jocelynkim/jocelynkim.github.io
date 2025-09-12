@@ -281,6 +281,15 @@ hr {
   }
 }
 
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.site-content {
+  flex: 1;
+}
+
 .site-name {
   margin: 0;
   color: $myGray;
