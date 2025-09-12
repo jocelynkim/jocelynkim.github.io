@@ -79,10 +79,7 @@ body {
   background-repeat: repeat;
   font: 18px/1.4 Nunito Sans, sans-serif;
   color: #28272A;
-  display: flex;
-  margin-top: 40px;
   height: 100%;
-  justify-content: center;
 }
 
 banner-load {
@@ -293,6 +290,8 @@ hr {
 /* LAYOUT / SECTIONS */
 /*********************/
 .wrapper-masthead {
+  display: flex;
+  justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -336,9 +335,12 @@ hr {
 }
 
 .site-wrapper {
+  flex: 1;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-bottom: 40px;
+  justify-content: center;
 }
 
 .site-content {
@@ -534,6 +536,19 @@ reallink:active {
   overflow: auto;
 }
 
+.scrollbox-big {
+  height: 450px;
+  line-height: 2em;
+  overflow: scroll;
+  padding: 0.3em 0.3em 0.2em 0.3em;
+  background-color: #fff;
+  border: 0.05em dashed #28272A;
+  border-radius: 0.5em;
+  white-space: normal;
+  vertical-align: top;
+  overflow: auto;
+}
+
 .footerlink {
   border: none;
   white-space: nowrap;
@@ -545,21 +560,17 @@ reallink:active {
 
 .wrapper-footer {
   position: fixed;
-  left: 0;
   bottom: 0;
+  left: 0;
   width: 100%;
-  /*margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;*/
+  height: 40px;
   background-color: #28272A;
   color: #fff;
+  z-index: 1000;
 }
 
 footer {
-  padding-top: 8px;
-  padding-bottom: 35px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 8px 16px 35px 16px;
   color: #fff;
 }
 
