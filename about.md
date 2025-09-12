@@ -3,7 +3,7 @@ layout: blog
 title: about shinji
 ---
 <div class="imgContainer fade-in">
-	<img class="photo" width="50%" src="../images/toroneko.png">
+	<img class="photo" src="../images/toroneko.png">
 </div>
 <br>
 Shinji is a game developer and illustrator based in Tokyo. They are Korean-American, born and raised in sunny California. Feel free to reach out in either English or Japanese!<br>
