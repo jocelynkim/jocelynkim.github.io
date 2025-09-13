@@ -11,7 +11,7 @@ Currently, Shinji is working as a technical artist on mobile games. They also da
 They enjoy drinking chamomile tea, and generally dislike loud noises. 
 <jp>
   <p>信志（しんじ）です。実は韓国名です。東京住みです。
-    韓国系アメリカ人で、カリフォルニアの陽光で育ちました。英語でも日本語でも気軽に話しかけても大丈夫です!<br>
+    韓国系アメリカ人で、カリフォルニアの陽光で育ちました。英語でも日本語でも大丈夫なのでお気軽にどうぞ！<br>
     現在、モバイルゲームのテクニカルアーティストとして働いています。個人で絵を描いたり、写真を撮ったり、クリエイティブなのを色々やっています。<br>
     カモミールティーが好きで、うるさい音があんまり気に入らないです。
   </p>
