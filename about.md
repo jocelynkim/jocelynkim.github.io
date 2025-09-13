@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: about shinji
+title: about
 ---
 <div class="imgContainer fade-in">
 	<img class="photo" src="../images/toroneko.png">

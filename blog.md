@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: shinji blog
+title: blog
 ---
 <h1>Post Archive</h1>
 <!---
