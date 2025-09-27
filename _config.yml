@@ -17,19 +17,15 @@ avatar: https://avatars.githubusercontent.com/u/18454585?v=4
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
   email: me@shinji.zone
-  facebook:
-  flickr:
   github: jocelynkim
   instagram: shinji.dev
   linkedin: jocelyn-kim
-  pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: shinji_zone
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  x: shinji_zone
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  bsky: shinji.zone
+  letterboxd: kimshinji
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
@@ -42,6 +38,8 @@ google_analytics:
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
 url: http://www.shinji.zone
+blog: http://www.shinji.zone/blog
+about: http://www.shinji.zone/about
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)

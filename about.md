@@ -18,7 +18,7 @@ They enjoy drinking chamomile tea, and generally dislike loud noises.
 </jp> 
 <br>
 <h2>Links</h2>
-<a href="mailto:me@shinji.zone"><reallink><img class="icon" src="../images/email.svg" alt="E-mail"> E-mail</reallink></a> <falselink class="falselink">me ★ shinji.zone (★→@)</falselink><br>
-<a href="https://bsky.app/profile/shinji.zone"><reallink><img class="icon" src="../images/bsky.svg" alt="Bluesky"> Bluesky</reallink></a> <falselink class="falselink">shinji.zone</falselink><br>
-<a href="https://www.instagram.com/shinji.dev/"><reallink><img class="icon" src="../images/instagram.svg" alt="Instagram"> Instagram</reallink></a> <falselink class="falselink">shinji.dev</falselink><br>
-<a href="https://letterboxd.com/kimshinji/"><reallink><img class="icon" src="../images/letterboxd.svg" alt="Letterboxd"> Letterboxd</reallink></a> <falselink class="falselink">kimshinji</falselink><br>
+<a href="mailto:me@shinji.zone"><reallink><span class="icon email" alt="Email"></span>E-mail</reallink></a> <falselink class="falselink">me ★ shinji.zone (★→@)</falselink><br>
+<a href="https://bsky.app/profile/shinji.zone"><reallink><span class="icon bsky" alt="Bluesky"></span> Bluesky</reallink></a> <falselink class="falselink">shinji.zone</falselink><br>
+<a href="https://www.instagram.com/shinji.dev/"><reallink><span class="icon instagram" alt="Instagram"></span> Instagram</reallink></a> <falselink class="falselink">shinji.dev</falselink><br>
+<a href="https://letterboxd.com/kimshinji/"><reallink><span class="icon letterboxd" alt="Letterboxd"></span> Letterboxd</reallink></a> <falselink class="falselink">kimshinji</falselink><br>
