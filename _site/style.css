@@ -500,6 +500,7 @@ reallink {
   padding: 0.3em 0.3em 0.2em 0.3em;
   border-radius: 0.5em;
   color: #fff;
+  line-height: 2.2;
   background-color: #28272A;
   vertical-align: middle !important;
 }
