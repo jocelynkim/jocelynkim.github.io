@@ -22,3 +22,14 @@ They enjoy drinking chamomile tea, and generally dislike loud noises.
 <a href="https://bsky.app/profile/shinji.zone"><reallink><span class="icon bsky" alt="Bluesky"></span> Bluesky</reallink></a> <falselink class="falselink">shinji.zone</falselink><br>
 <a href="https://www.instagram.com/shinji.dev/"><reallink><span class="icon instagram" alt="Instagram"></span> Instagram</reallink></a> <falselink class="falselink">shinji.dev</falselink><br>
 <a href="https://letterboxd.com/kimshinji/"><reallink><span class="icon letterboxd" alt="Letterboxd"></span> Letterboxd</reallink></a> <falselink class="falselink">kimshinji</falselink><br>
+<br>
+<h2>Web Badge</h2>
+Feel free to link back to my zone with this code!
+
+<a href="{{ site.url }}"><img src="../images/button_shinjizone.gif" alt="shinji.zone button"></a>
+<textarea name="button code" cols="35" rows="5" readonly><a href="https://www.shinji.zone"><img src="https://www.shinji.zone/images/button_shinjizone.gif" alt="shinji.zone button"></a></textarea>
+<br>
+<h2>Visit another site?</h2>
+Here is a collection of nice places around the web.
+
+<a href="https://tnywndr.cafe"><img src="https://tnywndr.cafe/img/button_tnywndr.gif" alt="tiny wanderer link button"></a>

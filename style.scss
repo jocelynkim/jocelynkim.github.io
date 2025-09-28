@@ -473,6 +473,13 @@ reallink:active {
   color: $white;
 }
 
+textarea {
+  overflow: scroll;
+  border: 0.05em dashed $myGray;
+  overflow: auto;
+  resize: none;
+}
+
 .scrollbox {
   height: 300px;
   line-height: 2em;

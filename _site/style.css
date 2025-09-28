@@ -522,6 +522,13 @@ reallink:active {
   color: #fff;
 }
 
+textarea {
+  overflow: scroll;
+  border: 0.05em dashed #28272A;
+  overflow: auto;
+  resize: none;
+}
+
 .scrollbox {
   height: 300px;
   line-height: 2em;
