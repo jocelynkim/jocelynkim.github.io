@@ -2,10 +2,6 @@
 layout: blog
 title: about
 ---
-<div class="imgContainer fade-in">
-	<img class="photo" src="../images/toroneko.png">
-</div>
-<br>
 Shinji is a game developer and illustrator based in Tokyo. They are Korean-American, born and raised in sunny California. Feel free to reach out in either English or Japanese!<br>
 Currently, Shinji is working as a technical artist on mobile games. They also dabble in various creative hobbies like drawing and photography.<br>
 They enjoy drinking chamomile tea, and generally dislike loud noises. 
