@@ -94,6 +94,9 @@ a:link {
   color:$myGray;
   font-weight: bold;
 }
+a:link#button {
+  padding:1px;
+}
 a:visited {
   text-decoration: none;
   color:$myGray;
