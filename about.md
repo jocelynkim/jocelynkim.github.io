@@ -28,4 +28,4 @@ Feel free to link back to my zone with this code!
 <h2>Visit another site?</h2>
 Here is a collection of nice places around the web.
 
-<a href="https://tnywndr.cafe" id="button"><img src="https://tnywndr.cafe/img/button_tnywndr.gif" alt="tiny wanderer link button"></a>
+<a href="https://tnywndr.cafe" id="button"><img src="https://tnywndr.cafe/img/button_tnywndr.gif" alt="tiny wanderer link button"></a><a href="https://bobacupcake.com/" id="button"><img src="../images/button_bobacupcake.png" alt="bobacupcake link button"></a><a href="https://enjlectric.github.io/" id="button"><img src="../images/button_enjlectric.png" alt="enjlectric link button"></a>
