@@ -622,6 +622,7 @@ $icons: (
   x: "../images/svg/x.svg",
   bsky: "../images/svg/bsky.svg",
   letterboxd: "../images/svg/letterboxd.svg",
+  star: "../images/svg/star.svg",
 );
 
 .icon {
@@ -630,6 +631,7 @@ $icons: (
   padding-top: 0.15em;
   max-width: 100%;
   display: inline-block;
+  vertical-align: -0.15em;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: $white;
@@ -639,6 +641,17 @@ $icons: (
 
   &:hover {
     background-color: $myYellow;
+  }
+}
+
+.icon--white {
+  background-color: $white;
+}
+
+.icon--dark {
+  background-color: $myGray;
+  &:hover {
+    background-color: red;
   }
 }
 

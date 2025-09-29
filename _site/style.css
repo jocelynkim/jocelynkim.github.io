@@ -705,6 +705,7 @@ header {
   padding-top: 0.15em;
   max-width: 100%;
   display: inline-block;
+  vertical-align: -0.15em;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #fff;
@@ -714,6 +715,17 @@ header {
 }
 .icon:hover {
   background-color: #FFFF00;
+}
+
+.icon--white {
+  background-color: #fff;
+}
+
+.icon--dark {
+  background-color: #28272A;
+}
+.icon--dark:hover {
+  background-color: red;
 }
 
 .icon.blog {
@@ -769,6 +781,11 @@ header {
 .icon.letterboxd {
   mask-image: url(../images/svg/letterboxd.svg);
   -webkit-mask-image: url(../images/svg/letterboxd.svg);
+}
+
+.icon.star {
+  mask-image: url(../images/svg/star.svg);
+  -webkit-mask-image: url(../images/svg/star.svg);
 }
 
 iframe {
