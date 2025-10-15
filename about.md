@@ -17,6 +17,7 @@ They enjoy drinking chamomile tea, and generally dislike loud noises.
 <a href="mailto:me@shinji.zone"><reallink><span class="icon email" alt="Email"></span>E-mail</reallink></a> <falselink class="falselink">me<span class="icon icon--dark star" alt="✦"></span>shinji.zone (<span class="icon icon--dark star" alt="✦"></span>→@)</falselink><br>
 <a href="https://bsky.app/profile/shinji.zone"><reallink><span class="icon bsky" alt="Bluesky"></span> Bluesky</reallink></a> <falselink class="falselink">shinji.zone</falselink><br>
 <a href="https://www.instagram.com/shinji.dev/"><reallink><span class="icon instagram" alt="Instagram"></span> Instagram</reallink></a> <falselink class="falselink">shinji.dev</falselink><br>
+<a href="www.linkedin.com/in/jocelyn-kim/"><reallink><span class="icon linkedin" alt="Linkedin"></span> Linkedin</reallink></a> <falselink class="falselink">jocelyn-kim</falselink><br>
 <a href="https://letterboxd.com/kimshinji/"><reallink><span class="icon letterboxd" alt="Letterboxd"></span> Letterboxd</reallink></a> <falselink class="falselink">kimshinji</falselink><br>
 <br>
 <h2>Web Badge</h2>
