@@ -796,7 +796,8 @@ iframe {
 details {
   border: 1px dashed #28272A;
   border-radius: 4px;
-  padding: 0.5em 0.5em 0;
+  padding: 0.5em 1.5em 0em 1.5em;
+  margin: 0.5em 0em;
 }
 
 summary {
@@ -806,7 +807,7 @@ summary {
 }
 
 details[open] {
-  padding: 0.5em;
+  padding: 0.5em 1.5em 1.5em 1.5em;
 }
 
 details[open] summary {
