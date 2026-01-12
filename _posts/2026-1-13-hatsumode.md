@@ -1,12 +1,12 @@
 ---
 layout: post
-title: hatsumode
+title: 初詣 hatsumode
 ---
 
 first post of 2026
 
 <br>
-<center><falselink>Hatsumode</falselink></center>
+<center><falselink>初詣 Hatsumode</falselink></center>
 
 It's my third time going to Meiji Jingu for my first shrine visit of the year! I brought my Pentax K-70 with A-prime 50mm F2 film era lens to take a few photos. I edited them a bit to adjust colors.
 
