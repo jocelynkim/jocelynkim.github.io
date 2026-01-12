@@ -3,7 +3,7 @@ layout: post
 title: hatsumode
 ---
 
-starting up 2026
+first post of 2026
 
 <br>
 <center><falselink>Hatsumode</falselink></center>
