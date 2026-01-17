@@ -23,8 +23,9 @@ title: shinji zone drawbox
         }
         #gallery {
             display: flex;
-            flex-wrap: wrap;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 10px;
+            justify-content: center;
         }
         .image-container {
             border: 1px solid #ccc;
@@ -41,51 +42,88 @@ title: shinji zone drawbox
 </head>
 
 <body>
-    <div class="row">
-        <div class="passage-6">
-            <div class="passage">
-                <div class="title"><a class="title" href="/"><span class="icon star" alt="✦"></span>　drawbox　<span class="icon star" alt="✦"></span></a></div><br>
+    <div class="site-wrapper">
+        <div class="wrapper-masthead">
 
-                <div class="container">
-                    <h3>Leave your mark on shinji zone!</h3>
-                    Write me a message, draw your favorite character, doodle what you want to eat for dinner... the sky's the limit!
-                    <br>
-                    Don't forget to click the "Submit" button.
-                    <br><br>
+            <div class="row">
+                <div class="passage-6">
+                    <div class="passage">
+                        <div class="title"><a class="title" href="/"><span class="icon star" alt="✦"></span>　drawbox　<span class="icon star" alt="✦"></span></a></div><br>
 
-                    <div align="center">
-                        <canvas id="drawboxcanvas" width="500" height="500"></canvas>
-                        <br>
-                        <div onclick="change_color(this)" style="background:red" class="stroke-color"></div>
-                        <div onclick="change_color(this)" style="background:blue" class="stroke-color"></div>
-                        
-                        <button onclick="Restore()">Undo</button>
-                        <button onclick="Clear()">Clear</button>
-                        
-                        <input type="color" oninput="stroke_color = this.value">
-                        <input type="range" min="1" max="100" oninput="stroke_width = this.value">
-                        
-                        <button id="submit">Submit</button>
-                        <p id="status"></p>
-                        <br>
-                        <a href="https://drawbox.nekoweb.org/"><reallink><span class="icon star" alt="Drawbox"></span> What's a drawbox?</reallink></a>
-                        <script src="/drawbox.js" defer></script>
+                        <div class="container">
+                            <h3>Leave your mark on shinji zone!</h3>
+                            Write me a message, draw your favorite character, doodle what you want to eat... the sky's the limit!
+                            <br>
+                            Don't forget to click the "Submit" button.
+                            <br><br>
+
+                            <div align="center">
+                                <canvas id="drawboxcanvas" width="500" height="500"></canvas>
+                                <br>
+                                <div onclick="change_color(this)" style="background:red" class="stroke-color"></div>
+                                <div onclick="change_color(this)" style="background:blue" class="stroke-color"></div>
+                                
+                                <button onclick="Restore()">Undo</button>
+                                <button onclick="Clear()">Clear</button>
+                                
+                                <input type="color" oninput="stroke_color = this.value">
+                                <input type="range" min="1" max="100" oninput="stroke_width = this.value">
+                                
+                                <br>
+
+                                <button id="submit">Submit Drawing</button>
+                                <p id="status"></p>
+                                <br>
+                                <script src="/drawbox.js" defer></script>
+                            </div>
+
+                            <a href="/"><reallink><span class="icon home" alt="Home"></span> Back</reallink></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="passage-6">
+                    <div class="passage">
+                        <div class="title"><a class="title" href="/"><span class="icon star" alt="✦"></span>　gallery　<span class="icon star" alt="✦"></span></a></div><br>
+                        <div class="container">
+                            <h3>Submitted Drawings</h3>
+                            Sorted chronologically (newest first). If you'd like a submission to be removed, please <a href="https://www.shinji.zone/about/">contact me</a>.
+                            <br><br>
+                            <div class="scrollbox">
+                              <div id="gallery">Loading images...</div>
+                            </div>
+                            <br>
+                            <a href="https://drawbox.nekoweb.org/"><reallink><span class="icon star" alt="Drawbox"></span> What's a drawbox?</reallink></a>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
-    <div class="passage-6">
-        <div class="passage">
-            <div class="title"><a class="title" href="/"><span class="icon star" alt="✦"></span>　gallery　<span class="icon star" alt="✦"></span></a></div><br>
-            <div class="container">
-                <h3>Submitted Drawings</h3>
-                Sorted chronologically (newest first). If you'd like a submission to be removed, please <a href="https://www.shinji.zone/about/">contact me</a>.
-                <br><br>
-                <div class="scrollbox">
-                  <div id="gallery">Loading images...</div>
-                </div>
-            </div>
+
+      <div class="wrapper-footer">
+        <div class="wrapper-container">
+          <footer class="footer">
+            <span class="left">
+              <a href="{{ site.url }}"><span class="icon home" alt="Home"></span></a>
+              <a href="{{ site.blog }}"><span class="icon blog" alt="Blog"></span></a>
+              <a href="{{ site.about }}"><span class="icon question" alt="About"></span></a>
+            </span>
+            <span class="right">
+              <a href="mailto:{{ site.footer-links.email }}"><span class="icon email" alt="Email"></span></a>
+              <a href="https://bsky.app/profile/{{ site.footer-links.bsky }}"><span class="icon bsky" alt="Bluesky"></span></a>
+              <a href="https://instagram.com/{{ site.footer-links.instagram }}"><span class="icon instagram" alt="Instagram"></span></a>
+              <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}/"><span class="icon linkedin" alt="Linkedin"></span></a>
+              <a href="https://letterboxd.com/{{ site.footer-links.letterboxd }}"><span class="icon letterboxd" alt="Letterboxd"></span></a>
+            </span>
+          </footer>
         </div>
+      </div>
+      
+      <script>
+        $('.btn').click(function() {
+            location.reload();
+        });
+      </script>
     </div>
 </body>
 </html>

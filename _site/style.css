@@ -788,6 +788,11 @@ header {
   -webkit-mask-image: url(../images/svg/star.svg);
 }
 
+.icon.palette {
+  mask-image: url(../images/svg/palette.svg);
+  -webkit-mask-image: url(../images/svg/palette.svg);
+}
+
 iframe {
   aspect-ratio: 16/9;
   width: 100% !important;
