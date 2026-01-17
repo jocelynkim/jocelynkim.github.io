@@ -28,6 +28,10 @@ const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/" + GOOGLE_FORM_ID + 
 
 let canvas = document.getElementById("drawboxcanvas");
 let context = canvas.getContext("2d");
+if (!canvas || !gallery) {
+    console.error("Drawbox elements not found");
+    return;
+}
 context.fillStyle = "white";
 context.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -36,6 +40,19 @@ let start_index = -1;
 let stroke_color = "black";
 let stroke_width = "2";
 let is_drawing = false;
+
+function resizeCanvas() {
+  const rect = canvas.getBoundingClientRect();
+  const dpr = window.devicePixelRatio || 1;
+
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.height * dpr;
+
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+}
+
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas();
 
 function change_color(element) {
   stroke_color = element.style.background;

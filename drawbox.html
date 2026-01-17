@@ -13,6 +13,10 @@ title: shinji zone drawbox
         canvas {
             border: 1px solid black;
             cursor: crosshair;
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            touch-action: none;
         }
         #gallery {
             display: flex;
@@ -39,7 +43,7 @@ title: shinji zone drawbox
             <div class="passage">
                 <div class="title"><a class="title" href="/"><span class="icon star" alt="✦"></span>　drawbox　<span class="icon star" alt="✦"></span></a></div><br>
 
-                <div id="main" role="main" class="container">
+                <div class="container">
                     <h3>Leave your mark on shinji zone!</h3>
                     Write me a message, draw your favorite character, doodle what you want to eat for dinner... the sky's the limit!
                     <br>
@@ -60,8 +64,6 @@ title: shinji zone drawbox
                         
                         <button id="submit">Submit</button>
                         <p id="status"></p>
-                            
-                        <script src="drawbox.js"></script>
 
                         <br>
                         <a href="https://drawbox.nekoweb.org/"><reallink><span class="icon star" alt="Drawbox"></span> What's a drawbox?</reallink></a>
@@ -72,7 +74,7 @@ title: shinji zone drawbox
     <div class="passage-6">
         <div class="passage">
             <div class="title"><a class="title" href="/"><span class="icon star" alt="✦"></span>　gallery　<span class="icon star" alt="✦"></span></a></div><br>
-            <div id="main" role="main" class="container">
+            <div class="container">
                 <h3>Submitted Drawings</h3>
                 Sorted chronologically (newest first). If you'd like a submission to be removed, please <a href="https://www.shinji.zone/about/">contact me</a>.
                 <br><br>
@@ -83,4 +85,5 @@ title: shinji zone drawbox
         </div>
     </div>
 </body>
+<script src="drawbox.js"></script>
 </html>
