@@ -1,19 +1,27 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=New%20Rocker">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zen%20Kaku%20Gothic%20New">
-    <meta name="description" content="blank">
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta name="description" content="welcome to my zone">
+    <meta property="og:description" content="welcome to my zone" />
     <meta name="author" content="shinji zone" />
     <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="shinji zone - welcome to my zone" href="/feed.xml" />
+    <title>shinji zone drawbox | shinji.zone</title>
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-    <title>shinji zone drawbox</title>
   </head>
   <body>
-    <!DOCTYPE html>
+    
+    <div class="site-wrapper">
+      <div class="wrapper-masthead">
+        <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
         * {box-sizing: border-box;}
@@ -49,65 +57,65 @@
 </head>
 
 <body>
-    <div class="site-wrapper">
-        <div class="wrapper-masthead">
+    <div class="row">
+        <div class="passage-6">
+            <div class="passage">
+                <div class="title"><a class="title" href="/"><span class="icon star" alt="✦"></span>　drawbox　<span class="icon star" alt="✦"></span></a></div><br>
 
-            <div class="row">
-                <div class="passage-6">
-                    <div class="passage">
-                        <div class="title"><a class="title" href="/"><span class="icon star" alt="✦"></span>　drawbox　<span class="icon star" alt="✦"></span></a></div><br>
+                <div class="container">
+                    <h3>Leave your mark on shinji zone!</h3>
+                    Write me a message, draw your favorite character, doodle what you want to eat... the sky's the limit!
+                    <br>
+                    Don't forget to click the "Submit" button.
+                    <br><br>
 
-                        <div class="container">
-                            <h3>Leave your mark on shinji zone!</h3>
-                            Write me a message, draw your favorite character, doodle what you want to eat... the sky's the limit!
-                            <br>
-                            Don't forget to click the "Submit" button.
-                            <br><br>
+                    <div align="center">
+                        <canvas id="drawboxcanvas" width="500" height="500"></canvas>
+                        <br>
+                        <div onclick="change_color(this)" style="background:red" class="stroke-color"></div>
+                        <div onclick="change_color(this)" style="background:blue" class="stroke-color"></div>
+                        
+                        <button onclick="Restore()">Undo</button>
+                        <button onclick="Clear()">Clear</button>
+                        
+                        <input type="color" oninput="stroke_color = this.value">
+                        <input type="range" min="1" max="100" oninput="stroke_width = this.value">
+                        
+                        <br>
 
-                            <div align="center">
-                                <canvas id="drawboxcanvas" width="500" height="500"></canvas>
-                                <br>
-                                <div onclick="change_color(this)" style="background:red" class="stroke-color"></div>
-                                <div onclick="change_color(this)" style="background:blue" class="stroke-color"></div>
-                                
-                                <button onclick="Restore()">Undo</button>
-                                <button onclick="Clear()">Clear</button>
-                                
-                                <input type="color" oninput="stroke_color = this.value">
-                                <input type="range" min="1" max="100" oninput="stroke_width = this.value">
-                                
-                                <br>
-
-                                <button id="submit">Submit Drawing</button>
-                                <p id="status"></p>
-                                <br>
-                                <script src="/drawbox.js" defer></script>
-                            </div>
-
-                            <a href="/"><reallink><span class="icon home" alt="Home"></span> Back</reallink></a>
-                        </div>
+                        <button id="submit">Submit Drawing</button>
+                        <p id="status"></p>
+                        <br>
+                        <script src="/drawbox.js" defer></script>
                     </div>
-                </div>
-                <div class="passage-6">
-                    <div class="passage">
-                        <div class="title"><a class="title" href="/"><span class="icon star" alt="✦"></span>　gallery　<span class="icon star" alt="✦"></span></a></div><br>
-                        <div class="container">
-                            <h3>Submitted Drawings</h3>
-                            Sorted chronologically (newest first). If you'd like a submission to be removed, please <a href="https://www.shinji.zone/about/">contact me</a>.
-                            <br><br>
-                            <div class="scrollbox">
-                              <div id="gallery">Loading images...</div>
-                            </div>
-                            <br>
-                            <a href="https://drawbox.nekoweb.org/"><reallink><span class="icon star" alt="Drawbox"></span> What's a drawbox?</reallink></a>
-                        </div>
-                    </div>
+                    
+                    <a href="/"><reallink><span class="icon home" alt="Home"></span> Back</reallink></a>
                 </div>
             </div>
-
         </div>
+        <div class="passage-6">
+            <div class="passage">
+                <div class="title"><a class="title" href="/"><span class="icon star" alt="✦"></span>　gallery　<span class="icon star" alt="✦"></span></a></div><br>
+                <div class="container">
+                    <h3>Submitted Drawings</h3>
+                    Sorted chronologically (newest first). If you'd like a submission to be removed, please <a href="https://www.shinji.zone/about/">contact me</a>.
+                    <br><br>
+                    <div class="scrollbox">
+                      <div id="gallery">Loading images...</div>
+                    </div>
+                    <br>
+                    <a href="https://drawbox.nekoweb.org/"><reallink><span class="icon star" alt="Drawbox"></span> What's a drawbox?</reallink></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 
-      <div class="wrapper-footer">
+      </div>
+    </div>
+
+    <div class="wrapper-footer">
         <div class="wrapper-container">
           <footer class="footer">
             <span class="left">
@@ -125,15 +133,12 @@
           </footer>
         </div>
       </div>
-      
+
       <script>
         $('.btn').click(function() {
             location.reload();
         });
       </script>
     </div>
-</body>
-</html>
-
   </body>
 </html>

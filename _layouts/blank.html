@@ -1,15 +1,52 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=New%20Rocker">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zen%20Kaku%20Gothic%20New">
-    <meta name="description" content="blank">
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta name="description" content="welcome to my zone">
+    <meta property="og:description" content="welcome to my zone" />
     <meta name="author" content="shinji zone" />
     <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="shinji zone - welcome to my zone" href="/feed.xml" />
+    <title>{{ page.title }} | shinji.zone</title>
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-    <title>{{ page.title }}</title>
   </head>
   <body>
-    {{ content }}
+    
+    <div class="site-wrapper">
+      <div class="wrapper-masthead">
+        {{ content }}
+      </div>
+    </div>
+
+    <div class="wrapper-footer">
+        <div class="wrapper-container">
+          <footer class="footer">
+            <span class="left">
+              <a href="{{ site.url }}"><span class="icon home" alt="Home"></span></a>
+              <a href="{{ site.blog }}"><span class="icon blog" alt="Blog"></span></a>
+              <a href="{{ site.about }}"><span class="icon question" alt="About"></span></a>
+            </span>
+            <span class="right">
+              <a href="mailto:{{ site.footer-links.email }}"><span class="icon email" alt="Email"></span></a>
+              <a href="https://bsky.app/profile/{{ site.footer-links.bsky }}"><span class="icon bsky" alt="Bluesky"></span></a>
+              <a href="https://instagram.com/{{ site.footer-links.instagram }}"><span class="icon instagram" alt="Instagram"></span></a>
+              <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}/"><span class="icon linkedin" alt="Linkedin"></span></a>
+              <a href="https://letterboxd.com/{{ site.footer-links.letterboxd }}"><span class="icon letterboxd" alt="Letterboxd"></span></a>
+            </span>
+          </footer>
+        </div>
+      </div>
+
+      <script>
+        $('.btn').click(function() {
+            location.reload();
+        });
+      </script>
+    </div>
   </body>
 </html>
