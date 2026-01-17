@@ -28,22 +28,14 @@ const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/" + GOOGLE_FORM_ID + 
 
 let canvas = document.getElementById("drawboxcanvas");
 let context = canvas.getContext("2d");
+context.fillStyle = "white";
+context.fillRect(0, 0, canvas.width, canvas.height);
 
 let restore_array = [];
 let start_index = -1;
-let redo_array = [];
 let stroke_color = "black";
 let stroke_width = "2";
 let is_drawing = false;
-
-function initCanvas() {
-  context.fillStyle = "white";
-  context.fillRect(0, 0, canvas.width, canvas.height);
-  restore_array.push(context.getImageData(0, 0, canvas.width, canvas.height));
-  start_index = 0;
-  redo_array = [];
-}
-initCanvas();
 
 function change_color(element) {
   stroke_color = element.style.background;
@@ -72,10 +64,8 @@ function stop(event) {
   context.stroke();
   context.closePath();
   is_drawing = false;
-  restore_array = restore_array.slice(0, start_index + 1);
   restore_array.push(context.getImageData(0, 0, canvas.width, canvas.height));
   start_index++;
-  redo_array = [];
   event.preventDefault();
 }
 
@@ -100,29 +90,21 @@ canvas.addEventListener("mouseup", stop, false);
 canvas.addEventListener("mouseout", stop, false);
 
 function Restore() {
-  if (start_index <= 0) return;
-  redo_array.push(restore_array[start_index]);
-  start_index--;
-  context.putImageData(restore_array[start_index], 0, 0);
-}
-
-function Redo() {
-  if (redo_array.length === 0) return; // nothing to redo
-
-  const data = redo_array.pop(); // get the last undone state
-  start_index++;
-  restore_array[start_index] = data; // restore it back to main stack
-  context.putImageData(data, 0, 0);
+  if (start_index <= 0) {
+    Clear();
+  } else {
+    start_index--;
+    restore_array.pop();
+    context.putImageData(restore_array[start_index], 0, 0);
+  }
 }
 
 function Clear() {
-  restore_array = restore_array.slice(0, start_index + 1);
-  restore_array.push(context.getImageData(0, 0, canvas.width, canvas.height));
-  start_index++;
   context.fillStyle = "white";
   context.clearRect(0, 0, canvas.width, canvas.height);
   context.fillRect(0, 0, canvas.width, canvas.height);
-  redo_array = [];
+  restore_array = [];
+  start_index = -1;
 }
 
 context.drawImage = function() {
