@@ -28,10 +28,6 @@ const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/" + GOOGLE_FORM_ID + 
 
 let canvas = document.getElementById("drawboxcanvas");
 let context = canvas.getContext("2d");
-if (!canvas || !gallery) {
-    console.error("Drawbox elements not found");
-    return;
-}
 context.fillStyle = "white";
 context.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -40,19 +36,6 @@ let start_index = -1;
 let stroke_color = "black";
 let stroke_width = "2";
 let is_drawing = false;
-
-function resizeCanvas() {
-  const rect = canvas.getBoundingClientRect();
-  const dpr = window.devicePixelRatio || 1;
-
-  canvas.width = rect.width * dpr;
-  canvas.height = rect.height * dpr;
-
-  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-}
-
-window.addEventListener("resize", resizeCanvas);
-resizeCanvas();
 
 function change_color(element) {
   stroke_color = element.style.background;
@@ -87,15 +70,15 @@ function stop(event) {
 }
 
 function getX(event) {
-  return event.pageX
-    ? event.pageX - canvas.offsetLeft
-    : event.targetTouches[0].pageX - canvas.offsetLeft;
+  const rect = canvas.getBoundingClientRect();
+  const clientX = event.touches ? event.touches[0].clientX : event.clientX;
+  return (clientX - rect.left) * (canvas.width / rect.width);
 }
 
 function getY(event) {
-  return event.pageY
-    ? event.pageY - canvas.offsetTop
-    : event.targetTouches[0].pageY - canvas.offsetTop;
+  const rect = canvas.getBoundingClientRect();
+  const clientY = event.touches ? event.touches[0].clientY : event.clientY;
+  return (clientY - rect.top) * (canvas.height / rect.height);
 }
 
 canvas.addEventListener("touchstart", start, false);

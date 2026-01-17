@@ -20,10 +20,13 @@
         canvas {
             border: 1px solid black;
             cursor: crosshair;
+            touch-action: none;
+        }
+        #drawboxcanvas {
             width: 100%;
             max-width: 500px;
             height: auto;
-            touch-action: none;
+            display: block;
         }
         #gallery {
             display: flex;
@@ -71,9 +74,9 @@
                         
                         <button id="submit">Submit</button>
                         <p id="status"></p>
-
                         <br>
                         <a href="https://drawbox.nekoweb.org/"><reallink><span class="icon star" alt="Drawbox"></span> What's a drawbox?</reallink></a>
+                        <script src="/drawbox.js" defer></script>
                     </div>
                 </div>
             </div>
@@ -92,7 +95,6 @@
         </div>
     </div>
 </body>
-<script src="drawbox.js"></script>
 </html>
 
   </body>
