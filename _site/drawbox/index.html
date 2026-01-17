@@ -38,15 +38,15 @@
         }
         #gallery {
             display: flex;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            flex-wrap: wrap;
             gap: 10px;
             justify-content: center;
         }
         .image-container {
-            border: 1px solid #ccc;
             padding: 5px;
             max-width: 200px;
             text-align: center;
+            line-height: 1.0;
         }
         .image-container img {
             max-width: 100%;
