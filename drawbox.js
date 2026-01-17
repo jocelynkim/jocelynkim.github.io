@@ -169,7 +169,11 @@ async function fetchImages() {
     const rows = csvText.split("\n").slice(1);
 
     const gallery = document.getElementById("gallery");
+    const counter = document.getElementById("gallery-counter");
     gallery.innerHTML = "";
+
+    let imageCount = 0;
+
     rows.reverse().forEach((row) => {
       const columns = row.split(",");
       if (columns.length < 2) return;
@@ -186,8 +190,10 @@ async function fetchImages() {
                     <p>${timestamp}</p>
                 `;
         gallery.appendChild(div);
+        imageCount++;
       }
     });
+    counter.textContent = `Submitted Drawings (${imageCount})`;
   } catch (error) {
     console.error("Error fetching images:", error);
     document.getElementById("gallery").textContent = "Failed to load images.";
