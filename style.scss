@@ -484,7 +484,6 @@ textarea {
 }
 
 .scrollbox {
-  height: 300px;
   line-height: 2em;
   overflow: scroll;
   padding: 0.3em 0.3em 0.2em 0.3em;
@@ -496,17 +495,12 @@ textarea {
   overflow: auto;
 }
 
-.scrollbox-big {
+.scrollbox--small {
+  height: 300px;
+}
+
+.scrollbox--big {
   height: 450px;
-  line-height: 2em;
-  overflow: scroll;
-  padding: 0.3em 0.3em 0.2em 0.3em;
-  background-color: $white;
-  border: 0.05em dashed $myGray;
-  border-radius: 0.5em;
-  white-space: normal;
-  vertical-align: top;
-  overflow: auto;
 }
 
 .footerlink {
