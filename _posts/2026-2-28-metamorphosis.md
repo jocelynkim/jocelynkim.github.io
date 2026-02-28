@@ -139,7 +139,7 @@ I think it was a little crazy of me to write over 18,000 words for this game jam
 <br>
 <center><falselink>Unused ideas graveyard</falselink></center>
 
-So one of my starting ideas in this game jam was the desire to use GUI/character art to visually enforce the passage of time. Originally I wanted to have three distinct settings - ancient Eastern Europe, medieval Korea (Chengok), medieval Japan (Hokkaido), and finally modern America (Chicago). Each setting would have a unique GUI and the Vampire characters' attire would change accordingly. In the end, that got pared down to two settings and basically two GUI styles.
+So one of my starting ideas in this game jam was the desire to use GUI/character art to visually enforce the passage of time. Originally I wanted to have three distinct settings - ancient Eastern Europe, medieval Korea (Cheongok), medieval Japan (Hokkaido), and finally modern America (Chicago). Each setting would have a unique GUI and the Vampire characters' attire would change accordingly. In the end, that got pared down to two settings and basically two GUI styles.
 
 Maybe I'll try to revisit that idea again. It might be fun to make a PC-98-esque game that has over-the-top GUI elements... like this game I randomly came across - <a href="https://www.pc98.org/bgsaori.html">「究極変幻バトルギャルさおり」 Ultimate Transformation Battle Girl Saori (1995)</a>. 
 
