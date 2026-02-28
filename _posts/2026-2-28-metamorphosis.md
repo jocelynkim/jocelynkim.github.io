@@ -132,7 +132,7 @@ I think it was a little crazy of me to write over 18,000 words for this game jam
  I'd love to make another visual novel-style game in Ren'Py in the future, but for my next project I'll probably try out a different game genre and engine. Maybe Godot? It seems like the community resources have really stepped up recently.
 
  Game jams are a great excuse to kick my ass into gear and finish stuff! Everyone should do game jams and make weird small games!!!
- Especially with the state of the games industry now, where all of these huge companies are terrified of losing profits, and can only commit to pumping out extremely polished-but-boring remakes and sequels to established franchises... I would love for people to create fresh stuff that cost less to make...
+ Especially with the state of the games industry now, where all of these huge companies are terrified of losing profits, and can only commit to pumping out extremely polished remakes and sequels to established franchises that does nothing to creatively disrupt... I would love for people to create fresh stuff that cost less to make...
 
  Making games that are smaller, cheaper, rougher around the edges, and more freaky and niche is really good, actually.
 
