@@ -166,12 +166,15 @@ Speaking of which, there are some total bangers in the genre that have been comi
 <br>
 <a href="https://www.youtube.com/watch?v=AGvx3tN2xnE"> 放送局に届いたある映像 (Footage Received by a Broadcasting Station) by エンタメ～テレ</a> 
 
-There are currently 5 episodes out in this collection of totally different stories that are all somehow connected by a single thread... I'm obsessed. This feels more like a typical scary found-footage horror. The next episode「Tape.6 AIの心霊動画は呪いを生むのか？」(Tape #6 Can AI-generated paranormal videos be cursed?) sounds like an interesting exploration of the idea of hauntings occuring in digital spaces... (if you fuck with me even the littlest bit please watch <a href="https://en.wikipedia.org/wiki/Pulse_(2001_film)">回路/Pulse</a> directed by Kiyoshi Kurosawa)
+There are currently 5 episodes out in this collection of totally different stories that are all somehow connected by a single thread... I'm obsessed. This feels more like a typical scary found-footage horror. The next episode「Tape.6 AIの心霊動画は呪いを生むのか？」(Tape #6 Can AI-generated paranormal videos be cursed?) sounds like an interesting exploration of the idea of hauntings occuring in digital spaces...
+
+(if you fuck with me even the littlest bit please watch <a href="https://en.wikipedia.org/wiki/Pulse_(2001_film)">回路/Pulse</a> directed by Kiyoshi Kurosawa)
 
 <br>
 <a href="https://www.youtube.com/watch?v=OEuhvu-Yi5E">「UFO山」(UFO Mountain) by TXQ Fiction</a>
 
 TXQ Fiction's second-newest series. It's maybe not outwardly "scary" (which I was a little disappointed by because I grew up being terrified of the cheesy late-night TV shows on aliens) but it's definitely unsettling. There were a ton of disparate plot points and possibly intentional red herrings, so watching it felt like I was being dragged all over the place and being shown a bunch of closed doors, never being given the key to unlock them... but in that confusion, it made me think pretty deeply on "why humans seek patterns" and "why humans need to create narratives". One man's conspiracy theory is another man's cope.
+
 I still haven't checked out the newest series that they're releasing (神木隆之介 Ryunosuke Kamiki) but oh man I hope it's about parasociality, or like how insane cults of personality are around celebrities... Excited!
 
 <br>
