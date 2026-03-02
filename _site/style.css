@@ -763,6 +763,11 @@ header {
   -webkit-mask-image: url(../images/svg/linkedin.svg);
 }
 
+.icon.itchio {
+  mask-image: url(../images/svg/itchio.svg);
+  -webkit-mask-image: url(../images/svg/itchio.svg);
+}
+
 .icon.rss {
   mask-image: url(../images/svg/rss.svg);
   -webkit-mask-image: url(../images/svg/rss.svg);
