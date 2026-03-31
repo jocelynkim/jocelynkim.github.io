@@ -13,9 +13,9 @@ I made a visual novel about a terrible vampire lady and her many, many batgirl l
 <iframe frameborder="0" src="https://itch.io/embed/4292505?linkback=true" width="552" height="167"><a href="https://jocelyn.itch.io/metamorphosis">Metamorphosis by shinji</a></iframe>
 
 <div class="imgContainer fade-in">
-	<img class="photo" src="../images/blog/2026/metamorphosis_ss1.png">
-	<img class="photo" src="../images/blog/2026/metamorphosis_ss2.png">
-	<img class="photo" src="../images/blog/2026/metamorphosis_ss3.png">
+	<img class="photo" src="/images/blog/2026/metamorphosis_ss1.png">
+	<img class="photo" src="/images/blog/2026/metamorphosis_ss2.png">
+	<img class="photo" src="/images/blog/2026/metamorphosis_ss3.png">
 </div>
 
 Originally I was planning on making something that I could submit to the <a href="https://itch.io/jam/swakjam-2026">Sealed With A Kiss Jam</a> and the <a href="https://itch.io/jam/queer-vampire-game-jam-2026">Queer Vampire Game Jam</a>, but I realized that I had too much stuff I wanted to add to make the first deadline. So I ended up only submitting to the Queer Vampire Game Jam, which was more fitting thematically in the end. 🧛🩸🦇
@@ -34,13 +34,13 @@ For a while I was like "haha. how interesting :)" and I drafted out the characte
 <center><falselink>In-progress stuff</falselink></center>
 
 <div class="imgContainer fade-in">
-	<img class="photo" src="../images/blog/2026/metamorphosis6.jpg">
-	<img class="photo" src="../images/blog/2026/metamorphosis4.jpg">
+	<img class="photo" src="/images/blog/2026/metamorphosis6.jpg">
+	<img class="photo" src="/images/blog/2026/metamorphosis4.jpg">
 </div>
 <div class="caption">When I mindlessly replaced all instances of the letter 'k' with the string 'kururu' and had to manually fix each instance</div>
 
 <div class="imgContainer fade-in">
-	<img class="photo" width="50%" src="../images/blog/2026/metamorphosis5.jpg">
+	<img class="photo" width="50%" src="/images/blog/2026/metamorphosis5.jpg">
 </div>
 <div class="caption">My first sketch of Kururu, a Siberian bat living in Hokkaido, Japan. At some point in the game, the vampire gifts her traditional Ainu garments from a local village.</div>
 
@@ -125,7 +125,7 @@ Process-wise, I used Procreate on my iPad to draw everything, and <a href="https
 I think it was a little crazy of me to write over 18,000 words for this game jam so I'm looking forward to doing something less text-heavy for my next project. Maybe in the next game I make everyone will communicate in caveman grunts. 
 
 <div class="imgContainer fade-in">
-	<img class="photo" src="../images/blog/2026/githubcontributions.png">
+	<img class="photo" src="/images/blog/2026/githubcontributions.png">
 </div>
 <div class="caption">look at all the green at the end!!! can I keep my 2026 looking healthy and green??</div>
 
@@ -144,8 +144,8 @@ So one of my starting ideas in this game jam was the desire to use GUI/character
 Maybe I'll try to revisit that idea again. It might be fun to make a PC-98-esque game that has over-the-top GUI elements... like this game I randomly came across - <a href="https://www.pc98.org/bgsaori.html">「究極変幻バトルギャルさおり」 Ultimate Transformation Battle Girl Saori (1995)</a>. 
 
 <div class="imgContainer fade-in">
-	<img class="photo" width="40%" src="../images/blog/2026/bgsaori2.png">
-	<img class="photo" width="40%" src="../images/blog/2026/bgsaori3.png">
+	<img class="photo" width="40%" src="/images/blog/2026/bgsaori2.png">
+	<img class="photo" width="40%" src="/images/blog/2026/bgsaori3.png">
 </div>
 <div class="caption">There are loads of awesome PC-98 games with super intricate and beautiful interfaces out there, but this one's bright simplicity made me think of Tamagotchi's egg designs. Cute!</div>
 

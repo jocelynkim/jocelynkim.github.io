@@ -13,21 +13,21 @@ It's my third time going to Meiji Jingu for my first shrine visit of the year! I
 I still need to get used to the actual camera's functionalities. Sometimes my photos are out-of-focus or over-exposed - but I'm really entranced by how soft the lights come out. I think using a digital camera body with film-era lenses and controlling the focus in a super manual way is a really fun way to do photography.
 
 <div class="imgContainer fade-in">
-	<img class="photo" width="75%" src="../images/blog/2026/meijijingu1.jpg">
-	<img class="photo" width="75%" src="../images/blog/2026/meijijingu2.jpg">
+	<img class="photo" width="75%" src="/images/blog/2026/meijijingu1.jpg">
+	<img class="photo" width="75%" src="/images/blog/2026/meijijingu2.jpg">
 </div>
 <div class="caption">Meiji Jingu</div>
 
 <div class="imgContainer fade-in">
-	<img class="photo" width="40%" src="../images/blog/2026/meijijingu4.jpg">
-	<img class="photo" width="40%" src="../images/blog/2026/meijijingu3.jpg">
+	<img class="photo" width="40%" src="/images/blog/2026/meijijingu4.jpg">
+	<img class="photo" width="40%" src="/images/blog/2026/meijijingu3.jpg">
 </div>
 <div class="caption">Meiji Jingu</div>
 
 Whenever I visit, it always surprises me how wide the space is! We basically started from Harajuku station, walked through the shrine path, went all the way up to Yoyogi station, and then back to Harajuku station. It feels like you're walking through a forest, which is amazing because you're basically a stone's throw away from Harajuku's busiest streets.
 
 <div class="imgContainer fade-in">
-	<img class="photo" width="75%" src="../images/blog/2026/omikuji1.jpg">
+	<img class="photo" width="75%" src="/images/blog/2026/omikuji1.jpg">
 </div>
 <div class="caption">omikuji (randomly-drawn fortune) + omamori (amulet for my health)</div>
 
