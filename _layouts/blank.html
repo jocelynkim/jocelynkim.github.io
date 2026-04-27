@@ -53,7 +53,7 @@
             .then(r => r.text())
             .then(count => document.getElementById('counter').textContent = count);
         } else {
-          fetch('https://visitor-counter.jocelynkimchi.workers.dev')
+          fetch('https://visitor-counter.jocelynkimchi.workers.dev/read')
             .then(r => r.text())
             .then(count => document.getElementById('counter').textContent = count);
         }
