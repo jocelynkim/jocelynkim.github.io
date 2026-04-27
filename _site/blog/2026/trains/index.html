@@ -108,9 +108,6 @@ The amount of skill it takes to wield a puppet… to make it dance and sing… I
       </div>
       
       <script>
-        $('.btn').click(function() {
-            location.reload();
-        });
         if (!sessionStorage.getItem('shinji_visited')) {
           sessionStorage.setItem('shinji_visited', '1');
           fetch('https://visitor-counter.jocelynkimchi.workers.dev')

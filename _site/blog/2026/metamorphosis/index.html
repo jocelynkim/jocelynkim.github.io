@@ -235,9 +235,6 @@
       </div>
       
       <script>
-        $('.btn').click(function() {
-            location.reload();
-        });
         if (!sessionStorage.getItem('shinji_visited')) {
           sessionStorage.setItem('shinji_visited', '1');
           fetch('https://visitor-counter.jocelynkimchi.workers.dev')
