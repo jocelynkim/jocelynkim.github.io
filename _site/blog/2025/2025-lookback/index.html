@@ -189,6 +189,16 @@ I hope that next year, I can have a little bit more chill, but keep working on t
         $('.btn').click(function() {
             location.reload();
         });
+        if (!sessionStorage.getItem('shinji_visited')) {
+          sessionStorage.setItem('shinji_visited', '1');
+          fetch('https://visitor-counter.jocelynkimchi.workers.dev')
+            .then(r => r.text())
+            .then(count => document.getElementById('counter').textContent = count);
+        } else {
+          fetch('https://visitor-counter.jocelynkimchi.workers.dev')
+            .then(r => r.text())
+            .then(count => document.getElementById('counter').textContent = count);
+        }
       </script>
     </div>
   </body>

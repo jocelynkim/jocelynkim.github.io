@@ -81,6 +81,16 @@ They enjoy drinking chamomile tea, and generally dislike loud noises.</p>
         $('.btn').click(function() {
             location.reload();
         });
+        if (!sessionStorage.getItem('shinji_visited')) {
+          sessionStorage.setItem('shinji_visited', '1');
+          fetch('https://visitor-counter.jocelynkimchi.workers.dev')
+            .then(r => r.text())
+            .then(count => document.getElementById('counter').textContent = count);
+        } else {
+          fetch('https://visitor-counter.jocelynkimchi.workers.dev')
+            .then(r => r.text())
+            .then(count => document.getElementById('counter').textContent = count);
+        }
       </script>
     </div>
   </body>
