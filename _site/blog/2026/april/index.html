@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=New%20Rocker">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zen%20Kaku%20Gothic%20New">
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta name="description" content="welcome to my zone">
+    <meta property="og:description" content="welcome to my zone" />
+    <meta name="author" content="shinji zone" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="shinji zone - welcome to my zone" href="/feed.xml" />
+    <link rel="shortcut icon" type="image/svg+xml" href="/favicon.svg">
+    <title>april's end | shinji.zone</title>
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <div class="wrapper-masthead">
+        <div class="passage-6">
+          <div class="passage">
+            <div class="title"><a class="title" href="/"><span class="icon star" alt="✦"></span>　blog　<span class="icon star" alt="✦"></span></a></div><br>
+            <div id="main" role="main" class="container">
+              <h1>april's end</h1>
+              <falselink>2026/04/30</falselink>
+              <hr>
+              <p>a brief post to end april</p>
+
+<p><br /></p>
+<center><falselink>This month's updates</falselink></center>
+<ul>
+  <li>Got a new tattoo</li>
+  <li>Lost my wallet (miraculously did have a panic attack over it) - and it was returned to me after a week</li>
+  <li>Started using <a href="https://anytype.io/">Anytype</a> as a personal knowledge database / project planner</li>
+  <li>Began working earnestly on making a nui doll for my partner</li>
+  <li>Slowly brainstorming ideas for a game jam with a friend</li>
+  <li>Cleared an escape room for the first time ever (Scrap’s <a href="https://realdgame.jp/s/item/">アイテムだらけの部屋からの脱出</a> - the character’s voice actor is <a href="https://www.youtube.com/channel/UCmgWMQkenFc72QnYkdxdoKA">Peanuts-kun!!</a>)</li>
+  <li>Set up my own website counter (the number in the annoying marquee on the homepage!)</li>
+</ul>
+
+<p>I’m pretty happy with the last one!</p>
+
+<p>I had been using a website counter from a third-party site which was fine… but because it had to ping to that site every time my homepage loaded, it took about 0.5 seconds longer for my homepage content to display. After like two years of simply dealing with it, I finally decided that I was sick of the lag!!! No more!!! (and, I guess at that time I had a fairly unsatisfying day and felt an urge to get some energy out by working on my website)</p>
+
+<p>I don’t understand backend programming very well… but following tutorials and chatbot instructions got me to where I needed to be - setting up a Cloudflare account and having a “durable object” storing the visitor count and keeping it persistent. (I don’t even know if I’m explaining that right)</p>
+
+<p>And, it will only track unique views using the current session storage. This means that the counter won’t increment by simply refreshing the page!! Yay.</p>
+
+<p>I’m sure website counters is like super basic web dev 101. But as a total newbie it was genuinely really exciting to figure out! I’m hoping there’s a way to use this kinda stuff for maintaining persistent global leaderboards or something for my future projects… I’ve wanted to make leaderboards for so many of my games, but never had enough courage to try to figure it out, but now I’m super motivated to get over this hurdle!</p>
+
+<p>Anyway… besides that, I’ve been trying to spend any spare moment I have on making a nui doll for my partner’s birthday. I’m making it from scratch - drawing my own design, embroidering the face on, making the clothes, everything! I’m on-track to finishing it next week, fingers crossed…! It’s been a jouney. But, well, I’ll write about the process next month.</p>
+
+<div class="imgContainer fade-in">
+    <img class="photo" width="70%" src="/images/blog/2026/nuitest.jpeg" />
+</div>
+<div class="caption">My practice attempt at constructing the head/body (on the left)</div>
+
+<p>That’s it for now!</p>
+
+              <br>
+              <a href="/blog"><reallink><span class="icon blog" alt="Blog"></span> Back to posts</reallink></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper-footer">
+        <div class="wrapper-container">
+          <footer class="footer">
+            <span class="left">
+              <a href="http://localhost:4000"><span class="icon home" alt="Home"></span></a>
+              <a href="https://www.shinji.zone/blog"><span class="icon blog" alt="Blog"></span></a>
+              <a href="https://www.shinji.zone/about"><span class="icon question" alt="About"></span></a>
+            </span>
+            <span class="right">
+              <a href="mailto:me@shinji.zone"><span class="icon email" alt="Email"></span></a>
+              <a href="https://bsky.app/profile/shinji.zone"><span class="icon bsky" alt="Bluesky"></span></a>
+              <a href="https://instagram.com/shinji.dev"><span class="icon instagram" alt="Instagram"></span></a>
+              <a href="https://jocelyn.itch.io/"><span class="icon itchio" alt="Itch.io"></span></a>
+              <a href="https://letterboxd.com/kimshinji"><span class="icon letterboxd" alt="Letterboxd"></span></a>
+            </span>
+          </footer>
+        </div>
+      </div>
+      
+      <script>
+        if (!sessionStorage.getItem('shinji_visited')) {
+          sessionStorage.setItem('shinji_visited', '1');
+          fetch('https://visitor-counter.jocelynkimchi.workers.dev')
+            .then(r => r.text())
+            .then(count => document.getElementById('counter').textContent = count);
+        } else {
+          fetch('https://visitor-counter.jocelynkimchi.workers.dev/read')
+            .then(r => r.text())
+            .then(count => document.getElementById('counter').textContent = count);
+        }
+      </script>
+    </div>
+  </body>
+</html>
