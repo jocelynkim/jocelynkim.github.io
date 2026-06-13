@@ -535,7 +535,6 @@ textarea {
 
 .scrollbox {
   line-height: 2em;
-  overflow: scroll;
   padding: 0.3em 0.3em 0.2em 0.3em;
   background-color: #fff;
   border: 0.05em dashed #28272A;
@@ -546,11 +545,17 @@ textarea {
 }
 
 .scrollbox--small {
-  height: 300px;
+  height: 150px;
 }
 
 .scrollbox--big {
   height: 450px;
+}
+
+.scrollbox--cbox {
+  height: 275px;
+  padding: 0;
+  overflow: hidden;
 }
 
 .footerlink {
